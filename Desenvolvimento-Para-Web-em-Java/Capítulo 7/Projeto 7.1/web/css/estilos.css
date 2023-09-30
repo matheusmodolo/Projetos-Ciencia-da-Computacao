@@ -1,0 +1,35 @@
+body {
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    background-color: #FFFFFF;
+}
+
+a{
+    color: #04a777;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+
+
+.tabela{
+    background: #000000;
+}
+
+.tabela th {
+    background: #ebf3e7;
+    padding: 5px;
+}
+
+.tabela td {
+    background: #FFFFFF;
+    padding: 5px;
+}
+
+.alinharDireita {
+    text-align: right;
+}
