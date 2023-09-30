@@ -1,0 +1,130 @@
+Create database if not exists testebd;
+Use testebd;
+
+Create table if not exists Classificacao(
+	idClassificacao integer not null auto_increment,
+	NomeClassificacao varchar (20) not null,
+	Primary key (idClassificacao)
+);
+
+Create table if not exists Cidade(
+	idCidade integer not null auto_increment,
+	nomeCidade varchar (50) not null,
+	siglaEstado varchar (2) not null,
+	Primary key (idCidade)
+);
+
+Create table if not exists TipoContato(
+	idTipoContato integer not null auto_increment,
+	nomeTipoContato varchar (50) not null,
+	Primary key (idTipoContato)
+);
+
+Create table if not exists Setor(
+	idSetor integer not null auto_increment,
+	nomeSetor varchar (20) not null,
+	Primary key (idSetor)
+);
+
+Create table if not exists Usuario(
+	idUsuario integer not null auto_increment,
+	login varchar (50) not null,
+	ativo integer not null,
+	senha varchar (50) not null,
+	nomeUsuario varchar (50) not null,
+	Primaru key (idUsuario),
+	Unique key login_key (login)
+);
+
+Create table if not exists Produto(
+	idProduto integer not null auto_increment,
+	descrição varchar (30) not null,
+	nomeProduto varchar (20) not null,
+	valorUnitario decimal (10, 2) not null,
+	Primary key (idProduto),
+	Unique key nomeProd_key (nomeProduto)
+);
+
+Create table if not exists Pedido(
+	idPedido integer not null auto_increment,
+	dataPedido date not null,
+	valorTotal decimal (10, 2) not null,
+	observacao varchar(255) not null,
+	acrescimo decimal (10, 2),
+	desconto decimal (10, 2),
+	previsaoEntrega date not null,
+	fkCliente integer not null,
+	fkUsuario integer not null,
+	fkVendedor integer not null,
+	Primary key (idPedido),
+	Foreign Key (fkCliente) references Cliente (idCliente),
+	Foreign Key (fkUsuario) references Usuario (idUsuario),
+	Foreign Key (fkVendedor) references Vendedor (idVendedor)
+);
+
+Create table if not exists PedidoItens(
+	fkPedido integer not null,
+	fkProduto integer not null,
+	quantidade integer not null,
+	Primary key (fkPedido, fkProduto),
+	Foreign Key (fkPedido) references Pedido (idPedido),
+	Foreign Key (fkProduto) references Produto (idProduto)
+);
+
+Create table id not exists Cliente(
+	idCliente integer not null auto_increment,
+	tipo integer not null,
+	cnpj_cpf varchar (20) not null,
+	nome varchar (80) not null,
+	observacao varchar (255),
+	dataCadastro date not null,
+	dataAlteracao date,
+	fkSetor integer not null,
+	fkClassificacao integer not null,
+	Primary key (idCliente),
+	Unique key cnpjcpf_key (cnpj_cpf),
+	Foreign key (fkSetor) references Setor (idSetor),
+	Foreign key (fkClassificacao) references Classificacao (idClassificacao),
+	Foreign key (fkUsuario) references Usuario (idUsuario)
+);
+
+Create table if not exists Telefones(
+	idTelefone integer not null auto_increment,
+	descricao varchar (80),
+	ddd varchar (3) not null,
+	numeroFone varchar(9) not null,
+	fkCliente integer not null,
+	Primary key (idTelefone)
+	Foreign key (fkCliente) references Cliente (idCliente)
+);
+
+Create table if not exists Contato(
+	idContato integer not null auto_increment,
+	nomeContato varchar (80) not null,
+	email varchar (80) not null,
+	email varchar (80) not null,
+	aniversario date not null,
+	observacao varchar (255),
+	ddd varchar (3) not null,
+	numeroCelular varchar (9) not null,
+	fkCliente integer not null,
+	fkUsuario integer not null,
+	fkTipoContato integer not null,
+	Primary key (idContato),
+	Foreign key (fkCliente) references Cliente (idCliente)
+	Foreign key (fkUsuario) referencer Usuario (idUsuario),
+	Foreign key (fkTipoContato) references TipoContato(idTipoContato)
+);
+
+Create table if not exists Enderecos(
+	idEndereco integer not null auto_increment,
+	bairro varchar (80) not null,
+	cep varchar (10) not null,
+	endereco varchar(80) not null,
+	complemento varchar (20),
+	fkCliente integer not null,
+	fkCidade integer not null,
+	Primary key (idEndereco),
+	Foreign key (fkCliente) references Cliente (idCliente),
+	Foreign key (fkCidade) references Cidade (idCidade)
+);
