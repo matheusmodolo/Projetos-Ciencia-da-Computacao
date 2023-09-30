@@ -1,0 +1,1366 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="DESKTOP-ML53M96" name="test.cprl.TesteEmLoteParser04Todos" skipped="0" tests="1" time="0.473" timestamp="2021-05-26T22:01:09">
+  <properties>
+    <property name="libs.spring-framework300.classpath" value="C:\Program Files\NetBeans-12.3\netbeans\platform\modules\org-apache-commons-logging.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\cglib-2.2.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\spring-3.0\spring-aop-3.2.18.RELEASE.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\spring-3.0\spring-aspects-3.2.18.RELEASE.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\spring-3.0\spring-beans-3.2.18.RELEASE.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\spring-3.0\spring-context-3.2.18.RELEASE.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\spring-3.0\spring-context-support-3.2.18.RELEASE.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\spring-3.0\spring-core-3.2.18.RELEASE.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\spring-3.0\spring-expression-3.2.18.RELEASE.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\spring-3.0\spring-instrument-3.2.18.RELEASE.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\spring-3.0\spring-instrument-tomcat-3.2.18.RELEASE.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\spring-3.0\spring-jdbc-3.2.18.RELEASE.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\spring-3.0\spring-jms-3.2.18.RELEASE.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\spring-3.0\spring-orm-3.2.18.RELEASE.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\spring-3.0\spring-oxm-3.2.18.RELEASE.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\spring-3.0\spring-struts-3.2.18.RELEASE.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\spring-3.0\spring-test-3.2.18.RELEASE.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\spring-3.0\spring-tx-3.2.18.RELEASE.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\spring-3.0\spring-web-3.2.18.RELEASE.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\spring-3.0\spring-webmvc-3.2.18.RELEASE.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\spring-3.0\spring-webmvc-portlet-3.2.18.RELEASE.jar" />
+    <property name="javac.test.classpath" value="F:/BCC/5°/CONC5 - Construção de Compiladores/Atividades/Projeto 02/Projeto02-ParserV1/lib/junit_4/junit-4.13.1.jar;F:/BCC/5°/CONC5 - Construção de Compiladores/Atividades/Projeto 02/Projeto02-ParserV1/lib/junit_4/hamcrest-all-1.3.jar:build/classes" />
+    <property name="java.specification.version" value="16" />
+    <property name="jar.index.metainf" value="false" />
+    <property name="libs.spring-framework500.classpath" value="C:\Program Files\NetBeans-12.3\netbeans\platform\modules\org-apache-commons-logging.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\cglib-2.2.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\spring-5\spring-aop-5.2.9.RELEASE.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\spring-5\spring-aspects-5.2.9.RELEASE.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\spring-5\spring-beans-5.2.9.RELEASE.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\spring-5\spring-context-5.2.9.RELEASE.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\spring-5\spring-context-indexer-5.2.9.RELEASE.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\spring-5\spring-context-support-5.2.9.RELEASE.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\spring-5\spring-core-5.2.9.RELEASE.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\spring-5\spring-expression-5.2.9.RELEASE.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\spring-5\spring-instrument-5.2.9.RELEASE.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\spring-5\spring-jcl-5.2.9.RELEASE.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\spring-5\spring-jdbc-5.2.9.RELEASE.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\spring-5\spring-jms-5.2.9.RELEASE.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\spring-5\spring-messaging-5.2.9.RELEASE.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\spring-5\spring-orm-5.2.9.RELEASE.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\spring-5\spring-oxm-5.2.9.RELEASE.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\spring-5\spring-test-5.2.9.RELEASE.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\spring-5\spring-tx-5.2.9.RELEASE.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\spring-5\spring-web-5.2.9.RELEASE.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\spring-5\spring-webflux-5.2.9.RELEASE.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\spring-5\spring-webmvc-5.2.9.RELEASE.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\spring-5\spring-websocket-5.2.9.RELEASE.jar" />
+    <property name="libs.spring-webmvc4.0.javadoc" value="" />
+    <property name="libs.spring-framework400.classpath" value="C:\Program Files\NetBeans-12.3\netbeans\platform\modules\org-apache-commons-logging.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\cglib-2.2.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\spring-4\spring-aop-4.3.29.RELEASE.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\spring-4\spring-aspects-4.3.29.RELEASE.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\spring-4\spring-beans-4.3.29.RELEASE.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\spring-4\spring-context-4.3.29.RELEASE.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\spring-4\spring-context-support-4.3.29.RELEASE.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\spring-4\spring-core-4.3.29.RELEASE.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\spring-4\spring-expression-4.3.29.RELEASE.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\spring-4\spring-instrument-4.3.29.RELEASE.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\spring-4\spring-instrument-tomcat-4.3.29.RELEASE.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\spring-4\spring-jdbc-4.3.29.RELEASE.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\spring-4\spring-jms-4.3.29.RELEASE.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\spring-4\spring-messaging-4.3.29.RELEASE.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\spring-4\spring-orm-4.3.29.RELEASE.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\spring-4\spring-oxm-4.3.29.RELEASE.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\spring-4\spring-test-4.3.29.RELEASE.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\spring-4\spring-tx-4.3.29.RELEASE.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\spring-4\spring-web-4.3.29.RELEASE.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\spring-4\spring-webmvc-4.3.29.RELEASE.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\spring-4\spring-webmvc-portlet-4.3.29.RELEASE.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\spring-4\spring-websocket-4.3.29.RELEASE.jar" />
+    <property name="test.binaryincludes" value="&lt;nothing&gt;" />
+    <property name="do.jlink" value="false" />
+    <property name="debug-transport" value="dt_shmem" />
+    <property name="libs.javaee-web-api-8.0.src" value="" />
+    <property name="java.vendor.url" value="https://java.oracle.com/" />
+    <property name="debug.modulepath" value="" />
+    <property name="libs.jsp-compilation.src" value="" />
+    <property name="libs.eclipselink.javadoc" value="C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\docs\javax.persistence-2.2.1-doc.zip" />
+    <property name="libs.JWSAntTasks.javadoc" value="" />
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-16\bin" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner test.cprl.TesteEmLoteParser04Todos skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,F:\BCC\5°\CONC5 - Construção de Compiladores\Atividades\Projeto 02\Projeto02-ParserV1\build\test\results\TEST-test.cprl.TesteEmLoteParser04Todos.xml crashfile=F:\BCC\5°\CONC5 - Construção de Compiladores\Atividades\Projeto 02\Projeto02-ParserV1\build\junitvmwatcher12793742352305872614.properties propsfile=F:\BCC\5°\CONC5 - Construção de Compiladores\Atividades\Projeto 02\Projeto02-ParserV1\build\junit10934558190723892256.properties" />
+    <property name="jdk.debug" value="release" />
+    <property name="libs.spring-framework300.src" value="" />
+    <property name="javadoc.use" value="true" />
+    <property name="javadoc.notree" value="false" />
+    <property name="libs.CopyLibs.displayName" value="CopyLibs Task" />
+    <property name="basedir" value="F:\BCC\5°\CONC5 - Construção de Compiladores\Atividades\Projeto 02\Projeto02-ParserV1" />
+    <property name="application.vendor" value="David" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="libs.jsf20.classpath" value="C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\jsf-2_2\javax.faces.jar" />
+    <property name="netbeans.extbrowser.manual_chrome_plugin_install" value="yes" />
+    <property name="libs.spring-framework500.javadoc" value="" />
+    <property name="netbeans.default_userdir_root" value="C:\Users\nmmat\AppData\Roaming\NetBeans" />
+    <property name="libs.jsp-compilation-syscp.src" value="" />
+    <property name="jdk.home" value="C:\Program Files\Java\jdk-16" />
+    <property name="java.runtime.version" value="16+36-2231" />
+    <property name="libs.eclipselink.maven-pom" value="" />
+    <property name="libs.metro.maven-pom" value="" />
+    <property name="libs.JAXB-ENDORSED.javadoc" value="" />
+    <property name="ant.file.Projeto02-ParserV1" value="F:\BCC\5°\CONC5 - Construção de Compiladores\Atividades\Projeto 02\Projeto02-ParserV1\build.xml" />
+    <property name="sun.java2d.noddraw" value="true" />
+    <property name="sun.zip.disableMemoryMapping" value="true" />
+    <property name="jnidispatch.path" value="C:\Users\nmmat\AppData\Local\Temp\jna-104942401\jna5065101983232956099.dll" />
+    <property name="libs.primefaces.javadoc" value="" />
+    <property name="libs.jsf12.src" value="" />
+    <property name="libs.jsp-compilation.javadoc" value="" />
+    <property name="libs.groovy-all.maven-pom" value="" />
+    <property name="libs.restapi.src" value="" />
+    <property name="libs.junit_5.javadoc" value="C:\Program Files\NetBeans-12.3\netbeans\platform\docs\junit-jupiter-api-5.6.0-javadoc.jar;C:\Program Files\NetBeans-12.3\netbeans\platform\docs\junit-jupiter-params-5.6.0-javadoc.jar;C:\Program Files\NetBeans-12.3\netbeans\platform\docs\junit-jupiter-engine-5.6.0-javadoc.jar" />
+    <property name="dist.archive.excludes" value="" />
+    <property name="java.io.tmpdir" value="C:\Users\nmmat\AppData\Local\Temp\" />
+    <property name="java.version" value="16" />
+    <property name="libraries.basename" value="nblibraries" />
+    <property name="libs.jakartaee-api-8.0.javadoc" value="C:\Program Files\NetBeans-12.3\netbeans\enterprise\docs\jakartaee8-doc-api.jar" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="libs.hamcrest.src" value="" />
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-16\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Users\nmmat\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\nmmat\AppData\Local\Programs\Python\Python39\;C:\Users\nmmat\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\PyCharm Community Edition 2021.1\bin;;C:\Program Files\Java\jdk-16\bin;;." />
+    <property name="java.vendor" value="Oracle Corporation" />
+    <property name="libs.groovy-all.src" value="" />
+    <property name="libs.testng.javadoc" value="C:\Program Files\NetBeans-12.3\netbeans\platform\docs\testng-6.13.1-javadoc.jar" />
+    <property name="meta.inf.dir" value="src/META-INF" />
+    <property name="compile.on.save" value="true" />
+    <property name="libs.testng.maven-pom" value="" />
+    <property name="jlink.additionalparam" value="" />
+    <property name="org.openide.version" value="deprecated" />
+    <property name="test.includes" value="test/cprl/TesteEmLoteParser04Todos.java" />
+    <property name="run.classpath" value="F:/BCC/5°/CONC5 - Construção de Compiladores/Atividades/Projeto 02/Projeto02-ParserV1/lib/junit_4/junit-4.13.1.jar;F:/BCC/5°/CONC5 - Construção de Compiladores/Atividades/Projeto 02/Projeto02-ParserV1/lib/junit_4/hamcrest-all-1.3.jar:build/classes" />
+    <property name="libs.jaxb.src" value="" />
+    <property name="test.src.dir" value="test" />
+    <property name="sun.awt.enableExtraMouseButtons" value="true" />
+    <property name="org.openide.major.version" value="IDE/1" />
+    <property name="libs.spring-framework300.javadoc" value="" />
+    <property name="ap.proc.none.internal" value="" />
+    <property name="org.openide.specification.version" value="6.2" />
+    <property name="user.timezone" value="America/Sao_Paulo" />
+    <property name="jar.index" value="false" />
+    <property name="libs.jpa20-persistence.classpath" value="C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\eclipselink\javax.persistence-2.2.1.jar" />
+    <property name="java.vm.specification.version" value="16" />
+    <property name="libs.eclipselinkmodelgen.javadoc" value="" />
+    <property name="libs.junit_5.classpath" value="C:\Program Files\NetBeans-12.3\netbeans\platform\modules\ext\junit-jupiter-api-5.6.0.jar;C:\Program Files\NetBeans-12.3\netbeans\platform\modules\ext\junit-jupiter-params-5.6.0.jar;C:\Program Files\NetBeans-12.3\netbeans\platform\modules\ext\junit-jupiter-engine-5.6.0.jar" />
+    <property name="javadoc.noindex" value="false" />
+    <property name="javadoc.private" value="false" />
+    <property name="libs.spring-webmvc4.0.maven-pom" value="" />
+    <property name="ant.file.Projeto02-ParserV1-impl" value="F:\BCC\5°\CONC5 - Construção de Compiladores\Atividades\Projeto 02\Projeto02-ParserV1\nbproject\build-impl.xml" />
+    <property name="ant.file.type.Projeto02-ParserV1" value="file" />
+    <property name="libs.JAXB-ENDORSED.maven-pom" value="" />
+    <property name="user.home" value="C:\Users\nmmat" />
+    <property name="libs.eclipselinkmodelgen.maven-pom" value="" />
+    <property name="have.sources" value="true" />
+    <property name="annotation.processing.processors.list" value="" />
+    <property name="jlink.launcher" value="true" />
+    <property name="javac.deprecation" value="false" />
+    <property name="libs.junit_4.displayName" value="JUnit 4.12" />
+    <property name="libs.junit_4.prop-maven-dependencies" value="junit:junit:4.13.1:jar" />
+    <property name="build.generated.sources.dir" value="build/generated-sources" />
+    <property name="plugin.manager.check.updates" value="false" />
+    <property name="netbeans.autoupdate.language" value="pt" />
+    <property name="build.compiler.emacs" value="true" />
+    <property name="libs.eclipselinkmodelgen.src" value="" />
+    <property name="build.classes.excludes" value="**/*.java,**/*.form" />
+    <property name="dist.jar" value="dist/Projeto02-ParserV1.jar" />
+    <property name="libs.spring-webmvc4.0.classpath" value="C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\spring-4\spring-webmvc-4.3.29.RELEASE.jar" />
+    <property name="libs.javaee-endorsed-api-7.0.javadoc" value="C:\Program Files\NetBeans-12.3\netbeans\enterprise\docs\javaee-doc-api.jar" />
+    <property name="os.version" value="10.0" />
+    <property name="netbeans.home" value="C:\Program Files\NetBeans-12.3\netbeans\platform" />
+    <property name="libs.CopyLibs.javadoc" value="" />
+    <property name="debug-transport-by-os" value="dt_shmem" />
+    <property name="libs.jsf20.src" value="" />
+    <property name="libs.javaee-api-8.0.javadoc" value="C:\Program Files\NetBeans-12.3\netbeans\enterprise\docs\javaee-doc-api.jar" />
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM" />
+    <property name="libs.jstl.javadoc" value="C:\Program Files\NetBeans-12.3\netbeans\enterprise\docs\javaee-doc-api.jar" />
+    <property name="libs.javaee-endorsed-api-7.0.maven-pom" value="" />
+    <property name="libs.jaxws21.classpath" value="C:\Program Files\NetBeans-12.3\netbeans\ide\modules\ext\jaxb\jaxb-impl.jar;C:\Program Files\NetBeans-12.3\netbeans\ide\modules\ext\jaxb\jaxb-xjc.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\jaxws22\FastInfoset.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\jaxws22\gmbal-api-only.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\jaxws22\ha-api.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\jaxws22\javax.mail_1.4.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\jaxws22\jaxws-rt.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\jaxws22\jaxws-tools.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\jaxws22\management-api.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\jaxws22\mimepull.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\jaxws22\policy.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\jaxws22\saaj-impl.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\jaxws22\stax-ex.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\jaxws22\stax2-api.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\jaxws22\streambuffer.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\jaxws22\woodstox-core-asl.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\jaxws22\api\jaxws-api.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\jaxws22\api\jsr181-api.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\jaxws22\api\javax.annotation.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\jaxws22\api\saaj-api.jar;C:\Program Files\NetBeans-12.3\netbeans\ide\modules\ext\jaxb\activation.jar;C:\Program Files\NetBeans-12.3\netbeans\ide\modules\ext\jaxb\api\jaxb-api.jar" />
+    <property name="libs.restapi.classpath" value="C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\jaxrs-2.0\javax.ws.rs-api-2.0.jar" />
+    <property name="os.arch" value="amd64" />
+    <property name="build.generated.dir" value="build/generated" />
+    <property name="libs.groovy-all.javadoc" value="" />
+    <property name="libs.jakartaee-api-8.0.classpath" value="C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\jakarta.jakartaee-api-8.0.0.jar" />
+    <property name="libs.javaee-web-api-7.0.javadoc" value="C:\Program Files\NetBeans-12.3\netbeans\enterprise\docs\javaee-doc-api.jar" />
+    <property name="libs.javaee-endorsed-api-6.0.src" value="" />
+    <property name="libs.jsf12.maven-pom" value="" />
+    <property name="libs.javaee-endorsed-api-7.0.classpath" value="C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\javaee7-endorsed\javax.annotation-api.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\javaee7-endorsed\javax.xml.soap-api.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\javaee7-endorsed\jaxb-api-osgi.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\javaee7-endorsed\jaxws-api.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\javaee7-endorsed\jsr181-api.jar" />
+    <property name="org.netbeans.io.suspend" value="0" />
+    <property name="libs.primefaces.maven-pom" value="" />
+    <property name="ant.project.name" value="Projeto02-ParserV1" />
+    <property name="dist.javadoc.dir" value="dist/javadoc" />
+    <property name="default.javac.target" value="16" />
+    <property name="javac.fork" value="true" />
+    <property name="libs.eclipselink.classpath" value="C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\eclipselink\org.eclipse.persistence.core-2.7.7.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\eclipselink\org.eclipse.persistence.asm-2.7.7.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\eclipselink\org.eclipse.persistence.antlr-2.7.7.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\eclipselink\org.eclipse.persistence.jpa-2.7.7.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\eclipselink\org.eclipse.persistence.jpa.jpql-2.7.7.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\eclipselink\org.eclipse.persistence.moxy-2.7.7.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\eclipselink\javax.persistence-2.2.1.jar" />
+    <property name="libs.struts.classpath" value="C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\struts\antlr-2.7.2.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\struts\bsf-2.3.0.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\struts\commons-beanutils-1.8.0.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\struts\commons-chain-1.2.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\struts\commons-digester-1.8.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\struts\commons-fileupload-1.1.1.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\struts\commons-io-1.1.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\struts\commons-logging-1.0.4.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\struts\commons-validator-1.3.1.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\struts\jstl-1.0.2.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\struts\oro-2.0.8.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\struts\standard-1.0.6.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\struts\struts-core-1.3.10.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\struts\struts-el-1.3.10.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\struts\struts-extras-1.3.10.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\struts\struts-faces-1.3.10.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\struts\struts-mailreader-dao-1.3.10.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\struts\struts-scripting-1.3.10.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\struts\struts-taglib-1.3.10.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\struts\struts-tiles-1.3.10.jar" />
+    <property name="libs.PostgreSQLDriver.maven-pom" value="" />
+    <property name="libs.absolutelayout.src" value="" />
+    <property name="testng.mode" value="testng" />
+    <property name="annotation.processing.enabled.in.editor" value="false" />
+    <property name="java.vm.compressedOopsMode" value="32-bit" />
+    <property name="netbeans.productversion" value="Apache NetBeans IDE 12.3" />
+    <property name="mkdist.disabled" value="false" />
+    <property name="libs.javaee-web-api-6.0.javadoc" value="C:\Program Files\NetBeans-12.3\netbeans\enterprise\docs\javaee-doc-api.jar" />
+    <property name="libs.javaee-api-7.0.maven-pom" value="" />
+    <property name="libs.groovy-all.classpath" value="C:\Program Files\NetBeans-12.3\netbeans\groovy\modules\ext\groovy.jar;C:\Program Files\NetBeans-12.3\netbeans\groovy\modules\ext\groovy-ant.jar" />
+    <property name="libs.absolutelayout.javadoc" value="" />
+    <property name="annotation.processing.processor.options" value="" />
+    <property name="libs.jaxb.maven-pom" value="" />
+    <property name="libs.javaee-api-6.0.maven-pom" value="" />
+    <property name="dist.dir" value="dist" />
+    <property name="build.dir" value="build" />
+    <property name="libs.graaljs.maven-pom" value="" />
+    <property name="netbeans.autoupdate.variant" value="" />
+    <property name="javadoc.version" value="false" />
+    <property name="libs.metro.classpath" value="C:\Program Files\NetBeans-12.3\netbeans\ide\modules\ext\jaxb\activation.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\metro\webservices-api.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\metro\webservices-extra-api.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\metro\webservices-extra.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\metro\webservices-rt.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\metro\webservices-tools.jar" />
+    <property name="libs.metro.src" value="" />
+    <property name="libs.CopyLibs.classpath" value="F:/BCC/5°/CONC5 - Construção de Compiladores/Atividades/Projeto 02/Projeto02-ParserV1/lib/CopyLibs/org-netbeans-modules-java-j2seproject-copylibstask.jar" />
+    <property name="sun.os.patch.level" value="" />
+    <property name="javadoc.html5" value="false" />
+    <property name="javac.test.processorpath" value="F:/BCC/5°/CONC5 - Construção de Compiladores/Atividades/Projeto 02/Projeto02-ParserV1/lib/junit_4/junit-4.13.1.jar;F:/BCC/5°/CONC5 - Construção de Compiladores/Atividades/Projeto 02/Projeto02-ParserV1/lib/junit_4/hamcrest-all-1.3.jar:build/classes" />
+    <property name="libs.javaee-web-api-7.0.maven-pom" value="" />
+    <property name="libs.javaee-web-api-8.0.maven-pom" value="" />
+    <property name="netbeans.dirs" value="C:\Program Files\NetBeans-12.3\netbeans\nb;C:\Program Files\NetBeans-12.3\netbeans\ergonomics;C:\Program Files\NetBeans-12.3\netbeans\ide;C:\Program Files\NetBeans-12.3\netbeans\extide;C:\Program Files\NetBeans-12.3\netbeans\java;C:\Program Files\NetBeans-12.3\netbeans\apisupport;C:\Program Files\NetBeans-12.3\netbeans\webcommon;C:\Program Files\NetBeans-12.3\netbeans\websvccommon;C:\Program Files\NetBeans-12.3\netbeans\enterprise;C:\Program Files\NetBeans-12.3\netbeans\mobility;C:\Program Files\NetBeans-12.3\netbeans\profiler;C:\Program Files\NetBeans-12.3\netbeans\python;C:\Program Files\NetBeans-12.3\netbeans\php;C:\Program Files\NetBeans-12.3\netbeans\identity;C:\Program Files\NetBeans-12.3\netbeans\harness;C:\Program Files\NetBeans-12.3\netbeans\cnd;C:\Program Files\NetBeans-12.3\netbeans\cndext;C:\Program Files\NetBeans-12.3\netbeans\cpplite;C:\Program Files\NetBeans-12.3\netbeans\dlight;C:\Program Files\NetBeans-12.3\netbeans\groovy;C:\Program Files\NetBeans-12.3\netbeans\extra;C:\Program Files\NetBeans-12.3\netbeans\javacard;C:\Program Files\NetBeans-12.3\netbeans\javafx" />
+    <property name="libraries.dir.nativedirsep" value="F:\BCC\5°\CONC5 - Construção de Compiladores\Atividades\Projeto 02\Projeto02-ParserV1\lib" />
+    <property name="libs.hamcrest.maven-pom" value="" />
+    <property name="javac.processorpath" value="F:/BCC/5°/CONC5 - Construção de Compiladores/Atividades/Projeto 02/Projeto02-ParserV1/lib/junit_4/junit-4.13.1.jar;F:/BCC/5°/CONC5 - Construção de Compiladores/Atividades/Projeto 02/Projeto02-ParserV1/lib/junit_4/hamcrest-all-1.3.jar" />
+    <property name="libs.javaee-api-6.0.javadoc" value="C:\Program Files\NetBeans-12.3\netbeans\enterprise\docs\javaee-doc-api.jar" />
+    <property name="libs.JWSAntTasks.maven-pom" value="" />
+    <property name="libs.algs4.classpath" value="C:\Users\nmmat\OneDrive\Documentos\algs4.jar" />
+    <property name="run.modulepath" value="" />
+    <property name="do.archive+manifest.available" value="true" />
+    <property name="apple.laf.useScreenMenuBar" value="true" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="user.country" value="BR" />
+    <property name="libs.restapi.javadoc" value="" />
+    <property name="libs.jpa20-persistence.src" value="" />
+    <property name="endorsed.classpath" value="" />
+    <property name="javac.test.sourcepath" value="F:\BCC\5°\CONC5 - Construção de Compiladores\Atividades\Projeto 02\Projeto02-ParserV1\build\empty" />
+    <property name="libs.spring-webmvc3.0.maven-pom" value="" />
+    <property name="includes" value="**" />
+    <property name="libs.jsf12.javadoc" value="C:\Program Files\NetBeans-12.3\netbeans\enterprise\docs\javaee-doc-api.jar" />
+    <property name="libs.hamcrest.classpath" value="C:\Program Files\NetBeans-12.3\netbeans\platform\modules\ext\hamcrest-core-1.3.jar" />
+    <property name="javadoc.splitindex" value="true" />
+    <property name="ant.file.type.Projeto02-ParserV1-impl" value="file" />
+    <property name="libs.JWSAntTasks.classpath" value="C:\Program Files\NetBeans-12.3\netbeans\java\ant\extra\org-netbeans-modules-javawebstart-anttasks.jar" />
+    <property name="junit.available" value="true" />
+    <property name="javac.processormodulepath" value="" />
+    <property name="javadoc.encoding" value="UTF-8" />
+    <property name="libs.jstl.src" value="" />
+    <property name="libs.jsp-compilation-syscp.maven-pom" value="" />
+    <property name="netbeans.hash.code" value="unique=NB_EXTIDE_JAVA_PHP_WEBCOMMON_WEBEE0e0b3b6f9-e21e-44fa-8784-1f5c2283e63b_21b8e8ca-a926-40a2-8152-fd923b0f6fec" />
+    <property name="jlink.strip" value="false" />
+    <property name="libs.algs4.maven-pom" value="" />
+    <property name="libs.spring-webmvc3.0.classpath" value="C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\spring-3.0\spring-webmvc-3.2.18.RELEASE.jar" />
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
+    <property name="manifest.available" value="true" />
+    <property name="libs.jaxb.javadoc" value="C:\Program Files\NetBeans-12.3\netbeans\ide\docs\jaxb-api-doc.jar" />
+    <property name="libs.spring-framework500.maven-pom" value="" />
+    <property name="run.jvmargs.ide" value="" />
+    <property name="ant.core.lib" value="C:\Program Files\NetBeans-12.3\netbeans\extide\ant\lib\ant.jar" />
+    <property name="libs.jsp-compilation.maven-pom" value="" />
+    <property name="javac.profile.cmd.line.arg" value="" />
+    <property name="do.archive+main.class.available" value="true" />
+    <property name="application.title" value="Projeto02-ParserV1" />
+    <property name="javac.test.modulepath" value="" />
+    <property name="libs.PostgreSQLDriver.javadoc" value="" />
+    <property name="libs.jsp-compilation-syscp.classpath" value="C:\Program Files\NetBeans-12.3\netbeans\extide\ant\lib\ant.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\servlet3.1-jsp2.3-api.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\glassfish-jspparser-4.0.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\jstl-impl.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\jsf-2_2\javax.faces.jar" />
+    <property name="libs.jsp-compilation.classpath" value="C:\Program Files\NetBeans-12.3\netbeans\extide\ant\lib\ant.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\servlet3.1-jsp2.3-api.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\glassfish-jspparser-4.0.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\jsf-2_2\javax.faces.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\jstl-api.jar;C:\Program Files\NetBeans-12.3\netbeans\extide\ant\lib\ant-launcher.jar" />
+    <property name="libs.javaee-api-6.0.classpath" value="C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\javaee-api-6.0.jar" />
+    <property name="javac.includesfile.binary" value="F:\BCC\5°\CONC5 - Construção de Compiladores\Atividades\Projeto 02\Projeto02-ParserV1\null1816136742" />
+    <property name="libs.javaee-api-7.0.classpath" value="C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\javaee-api-7.0.jar" />
+    <property name="sun.cpu.isalist" value="amd64" />
+    <property name="libs.restapi.maven-pom" value="" />
+    <property name="javadoc.preview" value="true" />
+    <property name="do.depend" value="false" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="nb.show.statistics.ui" value="usageStatisticsEnabled" />
+    <property name="libs.javaee-endorsed-api-7.0.src" value="" />
+    <property name="annotation.processing.enabled" value="true" />
+    <property name="libs.junit_5.src" value="C:\Program Files\NetBeans-12.3\netbeans\platform\docs\junit-jupiter-api-5.6.0-sources.jar;C:\Program Files\NetBeans-12.3\netbeans\platform\docs\junit-jupiter-params-5.6.0-sources.jar;C:\Program Files\NetBeans-12.3\netbeans\platform\docs\junit-jupiter-engine-5.6.0-sources.jar" />
+    <property name="libs.jaxb.classpath" value="C:\Program Files\NetBeans-12.3\netbeans\ide\modules\ext\jaxb\jaxb-impl.jar;C:\Program Files\NetBeans-12.3\netbeans\ide\modules\ext\jaxb\jaxb-xjc.jar;C:\Program Files\NetBeans-12.3\netbeans\ide\modules\ext\jaxb\activation.jar;C:\Program Files\NetBeans-12.3\netbeans\ide\modules\ext\jaxb\api\jaxb-api.jar" />
+    <property name="libs.javaee-api-8.0.classpath" value="C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\javaee-api-8.0.jar" />
+    <property name="libs.CopyLibs.src" value="" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="javac.source" value="1.8" />
+    <property name="java.version.date" value="2021-03-16" />
+    <property name="libs.algs4.src" value="" />
+    <property name="java.home" value="C:\Program Files\Java\jdk-16" />
+    <property name="libs.CopyLibs.prop-version" value="3.0" />
+    <property name="work.dir" value="F:\BCC\5°\CONC5 - Construção de Compiladores\Atividades\Projeto 02\Projeto02-ParserV1" />
+    <property name="jna.boot.library.name" value="jnidispatch-nb" />
+    <property name="javac.test.compilerargs" value="" />
+    <property name="libs.PostgreSQLDriver.classpath" value="C:\Program Files\NetBeans-12.3\netbeans\ide\modules\ext\postgresql-42.2.16.jar" />
+    <property name="libs.graaljs.javadoc" value="" />
+    <property name="libs.spring-webmvc3.0.javadoc" value="" />
+    <property name="libs.JAXB-ENDORSED.src" value="" />
+    <property name="manifest.encoding" value="UTF-8" />
+    <property name="user.script" value="" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="libs.spring-framework400.src" value="" />
+    <property name="run.test.modulepath" value="" />
+    <property name="libs.javaee-web-api-6.0.classpath" value="C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\javaee-web-api-6.0.jar" />
+    <property name="libs.graaljs.classpath" value="C:\Program Files\NetBeans-12.3\netbeans\webcommon\modules\ext\js-20.2.0.jar;C:\Program Files\NetBeans-12.3\netbeans\webcommon\modules\ext\js-launcher-20.2.0.jar;C:\Program Files\NetBeans-12.3\netbeans\webcommon\modules\ext\regex-20.2.0.jar;C:\Program Files\NetBeans-12.3\netbeans\webcommon\modules\ext\icu4j-67.1.jar;C:\Program Files\NetBeans-12.3\netbeans\ide\modules\ext\graal-sdk-20.2.0.jar;C:\Program Files\NetBeans-12.3\netbeans\ide\modules\ext\launcher-common-20.2.0.jar;C:\Program Files\NetBeans-12.3\netbeans\ide\modules\ext\truffle-api-20.2.0.jar" />
+    <property name="libs.jsp-compiler.javadoc" value="" />
+    <property name="debug.test.modulepath" value="" />
+    <property name="libs.javaee-web-api-7.0.classpath" value="C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\javaee-web-api-7.0.jar" />
+    <property name="file.encoding" value="Cp1252" />
+    <property name="java.util.logging.config.class" value="org.netbeans.core.startup.TopLogging" />
+    <property name="https.nonProxyHosts" value="localhost|127.0.0.1|DESKTOP-ML53M96" />
+    <property name="libs.restlib.javadoc" value="" />
+    <property name="libs.absolutelayout.classpath" value="C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\AbsoluteLayout.jar" />
+    <property name="do.archive" value="true" />
+    <property name="libs.struts.maven-pom" value="" />
+    <property name="built-jar.properties" value="F:\BCC\5°\CONC5 - Construção de Compiladores\Atividades\Projeto 02\Projeto02-ParserV1\build\built-jar.properties" />
+    <property name="nb.native.filechooser" value="false" />
+    <property name="libs.testng.src" value="" />
+    <property name="libs.javaee-web-api-8.0.classpath" value="C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\javaee-web-api-8.0.jar" />
+    <property name="platform.active" value="default_platform" />
+    <property name="manifest.file" value="manifest.mf" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="libs.struts.javadoc" value="C:\Program Files\NetBeans-12.3\netbeans\enterprise\docs\struts-1.3.10-javadoc.zip" />
+    <property name="default.javac.source" value="16" />
+    <property name="libs.javaee-web-api-8.0.javadoc" value="C:\Program Files\NetBeans-12.3\netbeans\enterprise\docs\javaee-doc-api.jar" />
+    <property name="netbeans.dynamic.classpath" value="C:\Program Files\NetBeans-12.3\netbeans\platform\core\asm-8.0.1.jar;C:\Program Files\NetBeans-12.3\netbeans\platform\core\asm-commons-8.0.1.jar;C:\Program Files\NetBeans-12.3\netbeans\platform\core\asm-tree-8.0.1.jar;C:\Program Files\NetBeans-12.3\netbeans\platform\core\core-base.jar;C:\Program Files\NetBeans-12.3\netbeans\platform\core\core.jar;C:\Program Files\NetBeans-12.3\netbeans\platform\core\org-netbeans-libs-asm.jar;C:\Program Files\NetBeans-12.3\netbeans\platform\core\org-openide-filesystems-compat8.jar;C:\Program Files\NetBeans-12.3\netbeans\platform\core\org-openide-filesystems.jar;C:\Program Files\NetBeans-12.3\netbeans\nb\core\org-netbeans-upgrader.jar;C:\Program Files\NetBeans-12.3\netbeans\nb\core\locale\core_nb.jar" />
+    <property name="libs.eclipselinkmodelgen.classpath" value="C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\eclipselink\org.eclipse.persistence.jpa.modelgen.processor-2.7.7.jar" />
+    <property name="netbeans.buildnumber" value="12.3-c3d4f6fa6c956cf1b5a35e8da4f44a96ab76f6a9" />
+    <property name="php.global.include.path" value="" />
+    <property name="endorsed.classpath.cmd.line.arg" value="" />
+    <property name="libs.jpa20-persistence.maven-pom" value="" />
+    <property name="os.name" value="Windows 10" />
+    <property name="build.sysclasspath" value="ignore" />
+    <property name="libs.CopyLibs.maven-pom" value="" />
+    <property name="libs.jakartaee-api-8.0.maven-pom" value="" />
+    <property name="jdkBug6558476" value="false" />
+    <property name="http.nonProxyHosts" value="localhost|127.0.0.1|DESKTOP-ML53M96" />
+    <property name="javadoc.author" value="false" />
+    <property name="main.class" value="test.cprl.TestParser" />
+    <property name="libs.jsp-compilation-syscp.javadoc" value="" />
+    <property name="source.encoding" value="UTF-8" />
+    <property name="jar.compress" value="false" />
+    <property name="libs.javaee-api-7.0.javadoc" value="C:\Program Files\NetBeans-12.3\netbeans\enterprise\docs\javaee-doc-api.jar" />
+    <property name="libs.spring-webmvc5.0.src" value="" />
+    <property name="libs.jsf20.maven-pom" value="" />
+    <property name="libs.restlib.classpath" value="C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\jersey2\ext\asm-all-repackaged-2.2.0-b21.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\jersey2\ext\cglib-2.2.0-b21.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\jersey2\ext\guava-14.0.1.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\jersey2\ext\hk2-api-2.2.0-b21.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\jersey2\ext\hk2-locator-2.2.0-b21.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\jersey2\ext\hk2-utils-2.2.0-b21.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\jersey2\ext\javax.annotation-api-1.2.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\jersey2\ext\javax.inject-2.2.0-b21.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\jersey2\ext\javax.servlet-api-3.0.1.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\jersey2\ext\jaxb-api-2.2.7.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\jersey2\ext\jersey-entity-filtering-2.5.1.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\jersey2\ext\jersey-media-moxy-2.5.1.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\jersey2\ext\org.osgi.core-4.2.0.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\jersey2\ext\osgi-resource-locator-1.0.1.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\jersey2\ext\persistence-api-1.0.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\jersey2\ext\validation-api-1.1.0.Final.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\jersey2\jersey-client.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\jersey2\jersey-common.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\jersey2\jersey-container-servlet.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\jersey2\jersey-container-servlet-core.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\jersey2\jersey-server.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\eclipselink\org.eclipse.persistence.core-2.7.7.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\eclipselink\org.eclipse.persistence.asm-2.7.7.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\eclipselink\org.eclipse.persistence.antlr-2.7.7.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\eclipselink\org.eclipse.persistence.jpa-2.7.7.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\eclipselink\org.eclipse.persistence.jpa.jpql-2.7.7.jar;C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\eclipselink\org.eclipse.persistence.moxy-2.7.7.jar" />
+    <property name="libs.jakartaee-web-api-8.0.javadoc" value="C:\Program Files\NetBeans-12.3\netbeans\enterprise\docs\jakartaee8-doc-api.jar" />
+    <property name="apple.awt.graphics.UseQuartz" value="true" />
+    <property name="libs.graaljs.src" value="" />
+    <property name="run.jvmargs" value="" />
+    <property name="libs.primefaces.src" value="" />
+    <property name="libraries.path" value="F:\BCC\5°\CONC5 - Construção de Compiladores\Atividades\Projeto 02\Projeto02-ParserV1\lib\nblibraries.properties" />
+    <property name="ant.file" value="F:\BCC\5°\CONC5 - Construção de Compiladores\Atividades\Projeto 02\Projeto02-ParserV1\build.xml" />
+    <property name="libs.struts.src" value="" />
+    <property name="path.separator" value=";" />
+    <property name="libs.JAXB-ENDORSED.classpath" value="C:\Program Files\NetBeans-12.3\netbeans\ide\modules\ext\jaxb\api\jaxb-api.jar" />
+    <property name="libs.restlib.src" value="" />
+    <property name="build.test.results.dir" value="build/test/results" />
+    <property name="libs.jaxws21.javadoc" value="C:\Program Files\NetBeans-12.3\netbeans\java\docs\jaxws-api-doc.zip" />
+    <property name="libs.spring-framework400.maven-pom" value="" />
+    <property name="libs.javaee-endorsed-api-6.0.javadoc" value="C:\Program Files\NetBeans-12.3\netbeans\enterprise\docs\javaee-doc-api.jar" />
+    <property name="ap.processors.internal" value="" />
+    <property name="libs.spring-webmvc5.0.javadoc" value="" />
+    <property name="libs.jsf12.classpath" value="C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\jsf-1_2\jsf-api.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\jsf-1_2\jsf-impl.jar" />
+    <property name="libs.hamcrest.javadoc" value="" />
+    <property name="libs.spring-framework400.javadoc" value="" />
+    <property name="do.jar" value="true" />
+    <property name="java.vm.info" value="mixed mode, sharing" />
+    <property name="libs.primefaces.classpath" value="C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\primefaces\primefaces-5.0.jar" />
+    <property name="libs.jaxws21.maven-pom" value="" />
+    <property name="run.test.classpath" value="F:/BCC/5°/CONC5 - Construção de Compiladores/Atividades/Projeto 02/Projeto02-ParserV1/lib/junit_4/junit-4.13.1.jar;F:/BCC/5°/CONC5 - Construção de Compiladores/Atividades/Projeto 02/Projeto02-ParserV1/lib/junit_4/hamcrest-all-1.3.jar:build/classes:build/test/classes" />
+    <property name="dist.jlink.output" value="dist/jlink/Projeto02-ParserV1" />
+    <property name="javadoc.encoding.used" value="UTF-8" />
+    <property name="java.class.version" value="60.0" />
+    <property name="src.dir" value="src" />
+    <property name="debug.classpath" value="F:/BCC/5°/CONC5 - Construção de Compiladores/Atividades/Projeto 02/Projeto02-ParserV1/lib/junit_4/junit-4.13.1.jar;F:/BCC/5°/CONC5 - Construção de Compiladores/Atividades/Projeto 02/Projeto02-ParserV1/lib/junit_4/hamcrest-all-1.3.jar:build/classes" />
+    <property name="ant.project.default-target" value="default" />
+    <property name="excludes" value="" />
+    <property name="libs.javaee-api-7.0.src" value="" />
+    <property name="sun.jnu.encoding" value="Cp1252" />
+    <property name="libs.junit_4.javadoc" value="F:/BCC/5°/CONC5 - Construção de Compiladores/Atividades/Projeto 02/Projeto02-ParserV1/lib/junit_4/junit-4.13.1-javadoc.jar" />
+    <property name="run.test.jvmargs" value="" />
+    <property name="libs.spring-webmvc4.0.src" value="" />
+    <property name="sun.java2d.dpiaware" value="true" />
+    <property name="main.class.available" value="true" />
+    <property name="libs.jsf20.javadoc" value="C:\Program Files\NetBeans-12.3\netbeans\enterprise\docs\javaee-doc-api.jar" />
+    <property name="netbeans.importclass" value="org.netbeans.upgrade.AutoUpgrade" />
+    <property name="netbeans.autoupdate.version" value="1.23" />
+    <property name="empty.dir" value="F:\BCC\5°\CONC5 - Construção de Compiladores\Atividades\Projeto 02\Projeto02-ParserV1\build\empty" />
+    <property name="netbeans.user" value="C:\Users\nmmat\AppData\Roaming\NetBeans\12.3" />
+    <property name="javac.includes.binary" value="F:\BCC\5°\CONC5 - Construção de Compiladores\Atividades\Projeto 02\Projeto02-ParserV1\build\test\classes\test\cprl\TesteEmLoteParser04Todos.class" />
+    <property name="file.separator" value="\" />
+    <property name="line.separator" value="&#xd;&#xa;" />
+    <property name="javadoc.additionalparam" value="" />
+    <property name="libs.spring-webmvc5.0.classpath" value="C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\spring-5\spring-webmvc-5.2.9.RELEASE.jar" />
+    <property name="javac.debug" value="true" />
+    <property name="libs.restlib.maven-pom" value="" />
+    <property name="libs.testng.classpath" value="C:\Program Files\NetBeans-12.3\netbeans\platform\modules\ext\testng-6.14.3.jar;C:\Program Files\NetBeans-12.3\netbeans\platform\modules\ext\jcommander-1.78.jar" />
+    <property name="libs.jsp-compiler.src" value="" />
+    <property name="user.name" value="nmmat" />
+    <property name="build.classes.dir" value="build/classes" />
+    <property name="nb.junit.single" value="false" />
+    <property name="javadoc.windowtitle" value="" />
+    <property name="nb.internal.action.name" value="run.single" />
+    <property name="libs.javaee-api-8.0.maven-pom" value="" />
+    <property name="libs.jaxws21.src" value="" />
+    <property name="jna.loaded" value="true" />
+    <property name="libs.junit_5.maven-pom" value="" />
+    <property name="libs.jpa20-persistence.javadoc" value="C:\Program Files\NetBeans-12.3\netbeans\java\modules\ext\docs\javax.persistence-2.2.1-doc.zip" />
+    <property name="ant.junit.enabletestlistenerevents" value="true" />
+    <property name="libs.JWSAntTasks.src" value="" />
+    <property name="ant.home" value="C:\Program Files\NetBeans-12.3\netbeans\extide\ant" />
+    <property name="libs.spring-webmvc3.0.src" value="" />
+    <property name="javac.external.vm" value="true" />
+    <property name="have.tests" value="true" />
+    <property name="debug.test.classpath" value="F:/BCC/5°/CONC5 - Construção de Compiladores/Atividades/Projeto 02/Projeto02-ParserV1/lib/junit_4/junit-4.13.1.jar;F:/BCC/5°/CONC5 - Construção de Compiladores/Atividades/Projeto 02/Projeto02-ParserV1/lib/junit_4/hamcrest-all-1.3.jar:build/classes:build/test/classes" />
+    <property name="testng.debug.mode" value="" />
+    <property name="javac.target" value="1.8" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.10.8 compiled on May 10 2020" />
+    <property name="libraries.dir" value="F:/BCC/5°/CONC5 - Construção de Compiladores/Atividades/Projeto 02/Projeto02-ParserV1/lib" />
+    <property name="libs.absolutelayout.maven-pom" value="" />
+    <property name="jdk.gtk.version" value="2.2" />
+    <property name="java.failonerror" value="true" />
+    <property name="libs.spring-framework500.src" value="" />
+    <property name="javac.modulepath" value="" />
+    <property name="user.properties.file" value="C:\Users\nmmat\AppData\Roaming\NetBeans\12.3\build.properties" />
+    <property name="libs.javaee-api-6.0.src" value="" />
+    <property name="javac.includes" value="test/cprl/TesteEmLoteParser04Todos.java" />
+    <property name="netbeans.autoupdate.country" value="BR" />
+    <property name="java.class.path" value="F:\BCC\5°\CONC5 - Construção de Compiladores\Atividades\Projeto 02\Projeto02-ParserV1\lib\junit_4\junit-4.13.1.jar;F:\BCC\5°\CONC5 - Construção de Compiladores\Atividades\Projeto 02\Projeto02-ParserV1\lib\junit_4\hamcrest-all-1.3.jar;F:\BCC\5°\CONC5 - Construção de Compiladores\Atividades\Projeto 02\Projeto02-ParserV1\build\classes;F:\BCC\5°\CONC5 - Construção de Compiladores\Atividades\Projeto 02\Projeto02-ParserV1\build\test\classes;C:\Program Files\NetBeans-12.3\netbeans\extide\ant\lib\ant-launcher.jar;C:\Program Files\NetBeans-12.3\netbeans\extide\ant\lib\ant.jar;C:\Program Files\NetBeans-12.3\netbeans\extide\ant\lib\ant-junit.jar;C:\Program Files\NetBeans-12.3\netbeans\extide\ant\lib\ant-junit4.jar" />
+    <property name="libs.javaee-web-api-6.0.maven-pom" value="" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="ap.supported.internal" value="true" />
+    <property name="user.variant" value="" />
+    <property name="netbeans.home+have.tests" value="true" />
+    <property name="test.binaryexcludes" value="" />
+    <property name="javac.compilerargs" value="" />
+    <property name="libs.jstl.maven-pom" value="" />
+    <property name="libs.jakartaee-web-api-8.0.src" value="" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="libs.junit_4.src" value="F:/BCC/5°/CONC5 - Construção de Compiladores/Atividades/Projeto 02/Projeto02-ParserV1/lib/junit_4/junit-4.13.1-sources.jar" />
+    <property name="user.language" value="pt" />
+    <property name="copylibs.rebase" value="true" />
+    <property name="libs.javaee-web-api-6.0.src" value="" />
+    <property name="maven.defaultProjectBuilder.disableGlobalModelCache" value="true" />
+    <property name="javadoc.nonavbar" value="false" />
+    <property name="libs.javaee-api-8.0.src" value="" />
+    <property name="libs.algs4.javadoc" value="" />
+    <property name="ant.java.version" value="16" />
+    <property name="libs.junit_4.classpath" value="F:/BCC/5°/CONC5 - Construção de Compiladores/Atividades/Projeto 02/Projeto02-ParserV1/lib/junit_4/junit-4.13.1.jar;F:/BCC/5°/CONC5 - Construção de Compiladores/Atividades/Projeto 02/Projeto02-ParserV1/lib/junit_4/hamcrest-all-1.3.jar" />
+    <property name="jlink.launcher.name" value="Projeto02-ParserV1" />
+    <property name="test.binarytestincludes" value="" />
+    <property name="sun.awt.keepWorkingSetOnMinimize" value="true" />
+    <property name="libs.junit_4.maven-pom" value="" />
+    <property name="libs.spring-webmvc5.0.maven-pom" value="" />
+    <property name="libs.jsp-compiler.maven-pom" value="" />
+    <property name="runtime.encoding" value="UTF-8" />
+    <property name="jlink.additionalmodules" value="" />
+    <property name="libs.jakartaee-web-api-8.0.classpath" value="C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\jakarta.jakartaee-web-api-8.0.0.jar" />
+    <property name="javac.classpath" value="F:/BCC/5°/CONC5 - Construção de Compiladores/Atividades/Projeto 02/Projeto02-ParserV1/lib/junit_4/junit-4.13.1.jar;F:/BCC/5°/CONC5 - Construção de Compiladores/Atividades/Projeto 02/Projeto02-ParserV1/lib/junit_4/hamcrest-all-1.3.jar" />
+    <property name="dist.jlink.dir" value="dist/jlink" />
+    <property name="nb.junit.batch" value="true" />
+    <property name="build.test.classes.dir" value="build/test/classes" />
+    <property name="libs.spring-framework300.maven-pom" value="" />
+    <property name="ant.project.invoked-targets" value="test-single" />
+    <property name="libs.jstl.classpath" value="C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\jstl-impl.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\jstl-api.jar" />
+    <property name="ap.cmd.line.internal" value="" />
+    <property name="libs.PostgreSQLDriver.src" value="" />
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/" />
+    <property name="annotation.processing.source.output" value="build/generated-sources/ap-source-output" />
+    <property name="libs.javaee-endorsed-api-6.0.maven-pom" value="" />
+    <property name="user.dir" value="F:\BCC\5°\CONC5 - Construção de Compiladores\Atividades\Projeto 02\Projeto02-ParserV1" />
+    <property name="platform.java" value="C:\Program Files\Java\jdk-16/bin/java" />
+    <property name="application.args" value="" />
+    <property name="org.xml.sax.driver" value="com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser" />
+    <property name="libs.jakartaee-web-api-8.0.maven-pom" value="" />
+    <property name="libs.eclipselink.src" value="" />
+    <property name="java.vm.version" value="16+36-2231" />
+    <property name="libs.metro.javadoc" value="C:\Program Files\NetBeans-12.3\netbeans\enterprise\docs\webservices-api-javadoc.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\docs\webservices-extra-javadoc.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\docs\webservices-extra-api-javadoc.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\docs\webservices-rt-javadoc.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\docs\webservices-tools-javadoc.jar" />
+    <property name="test.class" value="test.cprl.TesteEmLoteParser04Todos" />
+    <property name="sun.awt.datatransfer.timeout" value="1000" />
+    <property name="libs.javaee-web-api-7.0.src" value="" />
+    <property name="junit.forkmode" value="perTest" />
+    <property name="annotation.processing.run.all.processors" value="true" />
+    <property name="libs.jakartaee-api-8.0.src" value="" />
+    <property name="libs.jsp-compiler.classpath" value="C:\Program Files\NetBeans-12.3\netbeans\enterprise\ant\extra\jspcompile.jar" />
+    <property name="libs.javaee-endorsed-api-6.0.classpath" value="C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\javaee6-endorsed\javax.annotation.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\javaee6-endorsed\jaxb-api-osgi.jar;C:\Program Files\NetBeans-12.3\netbeans\enterprise\modules\ext\javaee6-endorsed\webservices-api-osgi.jar" />
+  </properties>
+  <testcase classname="test.cprl.TesteEmLoteParser04Todos" name="testeEmLoteParser04Todos" time="0.24" />
+  <system-out><![CDATA[#### Testando TesteIncorrect_101 ####
+*********** Resultado:
+Parsing Incorrect_101.cprl...
+*** Syntax error detected near line 7, character 4:
+    Expecting ";" but found "else" instead.
+Errors detected -- parsing terminated.
+
+*********** Esperado:
+Parsing Incorrect_101.cprl...
+*** Syntax error detected near line 7, character 4:
+    Expecting ";" but found "else" instead.
+Errors detected -- parsing terminated.
+
+### TesteIncorrect_101 ok! ###
+
+------------------------------------
+
+
+#### Testando TesteIncorrect_102 ####
+*********** Resultado:
+Parsing Incorrect_102.cprl...
+*** Syntax error detected near line 8, character 4:
+    Expecting "." but found ";" instead.
+Errors detected -- parsing terminated.
+
+*********** Esperado:
+Parsing Incorrect_102.cprl...
+*** Syntax error detected near line 8, character 4:
+    Expecting "." but found ";" instead.
+Errors detected -- parsing terminated.
+
+### TesteIncorrect_102 ok! ###
+
+------------------------------------
+
+
+#### Testando TesteIncorrect_103 ####
+*********** Resultado:
+Parsing Incorrect_103.cprl...
+*** Syntax error detected near line 7, character 4:
+    Identifier "i" cannot start a statement.
+Errors detected -- parsing terminated.
+
+*********** Esperado:
+Parsing Incorrect_103.cprl...
+*** Syntax error detected near line 7, character 4:
+    Identifier "i" cannot start a statement.
+Errors detected -- parsing terminated.
+
+### TesteIncorrect_103 ok! ###
+
+------------------------------------
+
+
+#### Testando TesteIncorrect_104 ####
+*********** Resultado:
+Parsing Incorrect_104.cprl...
+*** Syntax error detected near line 6, character 13:
+    Identifier "z" has not been declared.
+Errors detected -- parsing terminated.
+
+*********** Esperado:
+Parsing Incorrect_104.cprl...
+*** Syntax error detected near line 6, character 13:
+    Identifier "z" has not been declared.
+Errors detected -- parsing terminated.
+
+### TesteIncorrect_104 ok! ###
+
+------------------------------------
+
+
+#### Testando TesteIncorrect_105 ####
+*********** Resultado:
+Parsing Incorrect_105.cprl...
+*** Syntax error detected near line 5, character 9:
+    Identifier "FALSE" has not been declared.
+Errors detected -- parsing terminated.
+
+*********** Esperado:
+Parsing Incorrect_105.cprl...
+*** Syntax error detected near line 5, character 9:
+    Identifier "FALSE" has not been declared.
+Errors detected -- parsing terminated.
+
+### TesteIncorrect_105 ok! ###
+
+------------------------------------
+
+
+#### Testando TesteIncorrect_106 ####
+*********** Resultado:
+Parsing Incorrect_106.cprl...
+*** Syntax error detected near line 5, character 13:
+    Invalid literal expression.
+Errors detected -- parsing terminated.
+
+*********** Esperado:
+Parsing Incorrect_106.cprl...
+*** Syntax error detected near line 5, character 13:
+    Invalid literal expression.
+Errors detected -- parsing terminated.
+
+### TesteIncorrect_106 ok! ###
+
+------------------------------------
+
+
+#### Testando TesteIncorrect_107 ####
+*********** Resultado:
+Parsing Incorrect_107.cprl...
+Parsing complete.
+
+*********** Esperado:
+Parsing Incorrect_107.cprl...
+Parsing complete.
+
+### TesteIncorrect_107 ok! ###
+
+------------------------------------
+
+
+#### Testando TesteIncorrect_108 ####
+*********** Resultado:
+Parsing Incorrect_108.cprl...
+Parsing complete.
+
+*********** Esperado:
+Parsing Incorrect_108.cprl...
+Parsing complete.
+
+### TesteIncorrect_108 ok! ###
+
+------------------------------------
+
+
+#### Testando TesteIncorrect_109 ####
+*********** Resultado:
+Parsing Incorrect_109.cprl...
+*** Syntax error detected near line 2, character 7:
+    Identifier "x" is already defined in the current scope.
+Errors detected -- parsing terminated.
+
+*********** Esperado:
+Parsing Incorrect_109.cprl...
+*** Syntax error detected near line 2, character 7:
+    Identifier "x" is already defined in the current scope.
+Errors detected -- parsing terminated.
+
+### TesteIncorrect_109 ok! ###
+
+------------------------------------
+
+
+#### Testando TesteIncorrect_110 ####
+*********** Resultado:
+Parsing Incorrect_110.cprl...
+*** Syntax error detected near line 5, character 1:
+    Expecting ";" but found "end" instead.
+Errors detected -- parsing terminated.
+
+*********** Esperado:
+Parsing Incorrect_110.cprl...
+*** Syntax error detected near line 5, character 1:
+    Expecting ";" but found "end" instead.
+Errors detected -- parsing terminated.
+
+### TesteIncorrect_110 ok! ###
+
+------------------------------------
+
+
+#### Testando TesteIncorrect_111 ####
+*********** Resultado:
+Parsing Incorrect_111.cprl...
+Parsing complete.
+
+*********** Esperado:
+Parsing Incorrect_111.cprl...
+Parsing complete.
+
+### TesteIncorrect_111 ok! ###
+
+------------------------------------
+
+
+#### Testando TesteIncorrect_112 ####
+*********** Resultado:
+Parsing Incorrect_112.cprl...
+*** Syntax error detected near line 1, character 9:
+    Invalid type name.
+Errors detected -- parsing terminated.
+
+*********** Esperado:
+Parsing Incorrect_112.cprl...
+*** Syntax error detected near line 1, character 9:
+    Invalid type name.
+Errors detected -- parsing terminated.
+
+### TesteIncorrect_112 ok! ###
+
+------------------------------------
+
+
+#### Testando TesteIncorrect_113 ####
+*********** Resultado:
+Parsing Incorrect_113.cprl...
+*** Syntax error detected near line 5, character 4:
+    Identifier "y" has not been declared.
+Errors detected -- parsing terminated.
+
+*********** Esperado:
+Parsing Incorrect_113.cprl...
+*** Syntax error detected near line 5, character 4:
+    Identifier "y" has not been declared.
+Errors detected -- parsing terminated.
+
+### TesteIncorrect_113 ok! ###
+
+------------------------------------
+
+
+#### Testando TesteIncorrect_114 ####
+*********** Resultado:
+Parsing Incorrect_114.cprl...
+Parsing complete.
+
+*********** Esperado:
+Parsing Incorrect_114.cprl...
+Parsing complete.
+
+### TesteIncorrect_114 ok! ###
+
+------------------------------------
+
+
+#### Testando TesteIncorrect_115 ####
+*********** Resultado:
+Parsing Incorrect_115.cprl...
+*** Syntax error detected near line 7, character 6:
+    Expecting ":=" but found "=" instead.
+Errors detected -- parsing terminated.
+
+*********** Esperado:
+Parsing Incorrect_115.cprl...
+*** Syntax error detected near line 7, character 6:
+    Expecting ":=" but found "=" instead.
+Errors detected -- parsing terminated.
+
+### TesteIncorrect_115 ok! ###
+
+------------------------------------
+
+
+#### Testando TesteIncorrect_116 ####
+*********** Resultado:
+Parsing Incorrect_116.cprl...
+Parsing complete.
+
+*********** Esperado:
+Parsing Incorrect_116.cprl...
+Parsing complete.
+
+### TesteIncorrect_116 ok! ###
+
+------------------------------------
+
+
+#### Testando TesteIncorrect_117 ####
+*********** Resultado:
+Parsing Incorrect_117.cprl...
+Parsing complete.
+
+*********** Esperado:
+Parsing Incorrect_117.cprl...
+Parsing complete.
+
+### TesteIncorrect_117 ok! ###
+
+------------------------------------
+
+
+#### Testando TesteIncorrect_118 ####
+*********** Resultado:
+Parsing Incorrect_118.cprl...
+Parsing complete.
+
+*********** Esperado:
+Parsing Incorrect_118.cprl...
+Parsing complete.
+
+### TesteIncorrect_118 ok! ###
+
+------------------------------------
+
+
+#### Testando TesteIncorrect_119 ####
+*********** Resultado:
+Parsing Incorrect_119.cprl...
+Parsing complete.
+
+*********** Esperado:
+Parsing Incorrect_119.cprl...
+Parsing complete.
+
+### TesteIncorrect_119 ok! ###
+
+------------------------------------
+
+
+#### Testando TesteIncorrect_120 ####
+*********** Resultado:
+Parsing Incorrect_120.cprl...
+Parsing complete.
+
+*********** Esperado:
+Parsing Incorrect_120.cprl...
+Parsing complete.
+
+### TesteIncorrect_120 ok! ###
+
+------------------------------------
+
+
+#### Testando TesteIncorrect_121 ####
+*********** Resultado:
+Parsing Incorrect_121.cprl...
+Parsing complete.
+
+*********** Esperado:
+Parsing Incorrect_121.cprl...
+Parsing complete.
+
+### TesteIncorrect_121 ok! ###
+
+------------------------------------
+
+
+#### Testando TesteIncorrect_122 ####
+*********** Resultado:
+Parsing Incorrect_122.cprl...
+*** Lexical error detected near line 8, character 30:
+    Illegal escape character.
+*** Lexical error detected near line 9, character 30:
+    Illegal escape character.
+Errors detected in Incorrect_122.cprl -- parsing terminated.
+
+*********** Esperado:
+Parsing Incorrect_122.cprl...
+*** Lexical error detected near line 8, character 30:
+    Illegal escape character.
+*** Lexical error detected near line 9, character 30:
+    Illegal escape character.
+Errors detected in Incorrect_122.cprl -- parsing terminated.
+
+### TesteIncorrect_122 ok! ###
+
+------------------------------------
+
+
+#### Testando TesteIncorrect_123 ####
+*********** Resultado:
+Parsing Incorrect_123.cprl...
+*** Lexical error detected near line 8, character 37:
+    Illegal escape character.
+*** Lexical error detected near line 9, character 37:
+    Illegal escape character.
+Errors detected in Incorrect_123.cprl -- parsing terminated.
+
+*********** Esperado:
+Parsing Incorrect_123.cprl...
+*** Lexical error detected near line 8, character 37:
+    Illegal escape character.
+*** Lexical error detected near line 9, character 37:
+    Illegal escape character.
+Errors detected in Incorrect_123.cprl -- parsing terminated.
+
+### TesteIncorrect_123 ok! ###
+
+------------------------------------
+
+
+#### Testando TesteIncorrect_124 ####
+*********** Resultado:
+Parsing Incorrect_124.cprl...
+Parsing complete.
+
+*********** Esperado:
+Parsing Incorrect_124.cprl...
+Parsing complete.
+
+### TesteIncorrect_124 ok! ###
+
+------------------------------------
+
+
+#### Testando TesteIncorrect_125 ####
+*********** Resultado:
+Parsing Incorrect_125.cprl...
+Parsing complete.
+
+*********** Esperado:
+Parsing Incorrect_125.cprl...
+Parsing complete.
+
+### TesteIncorrect_125 ok! ###
+
+------------------------------------
+
+
+#### Testando TesteIncorrect_126 ####
+*********** Resultado:
+Parsing Incorrect_126.cprl...
+*** Syntax error detected near line 9, character 7:
+    Identifier "y" has not been declared.
+Errors detected -- parsing terminated.
+
+*********** Esperado:
+Parsing Incorrect_126.cprl...
+*** Syntax error detected near line 9, character 7:
+    Identifier "y" has not been declared.
+Errors detected -- parsing terminated.
+
+### TesteIncorrect_126 ok! ###
+
+------------------------------------
+
+
+#### Testando TesteIncorrect_127 ####
+*********** Resultado:
+Parsing Incorrect_127.cprl...
+Parsing complete.
+
+*********** Esperado:
+Parsing Incorrect_127.cprl...
+Parsing complete.
+
+### TesteIncorrect_127 ok! ###
+
+------------------------------------
+
+
+#### Testando TesteIncorrect_128 ####
+*********** Resultado:
+Parsing Incorrect_128.cprl...
+*** Syntax error detected near line 8, character 1:
+    Expecting "end" but found "and" instead.
+Errors detected -- parsing terminated.
+
+*********** Esperado:
+Parsing Incorrect_128.cprl...
+*** Syntax error detected near line 8, character 1:
+    Expecting "end" but found "and" instead.
+Errors detected -- parsing terminated.
+
+### TesteIncorrect_128 ok! ###
+
+------------------------------------
+
+
+#### Testando TesteIncorrect_129 ####
+*********** Resultado:
+Parsing Incorrect_129.cprl...
+*** Syntax error detected near line 1, character 8:
+    Expecting ":=" but found "," instead.
+Errors detected -- parsing terminated.
+
+*********** Esperado:
+Parsing Incorrect_129.cprl...
+*** Syntax error detected near line 1, character 8:
+    Expecting ":=" but found "," instead.
+Errors detected -- parsing terminated.
+
+### TesteIncorrect_129 ok! ###
+
+------------------------------------
+
+
+#### Testando TesteIncorrect_201 ####
+*********** Resultado:
+Parsing Incorrect_201.cprl...
+Parsing complete.
+
+*********** Esperado:
+Parsing Incorrect_201.cprl...
+Parsing complete.
+
+### TesteIncorrect_201 ok! ###
+
+------------------------------------
+
+
+#### Testando TesteIncorrect_202 ####
+*********** Resultado:
+Parsing Incorrect_202.cprl...
+Parsing complete.
+
+*********** Esperado:
+Parsing Incorrect_202.cprl...
+Parsing complete.
+
+### TesteIncorrect_202 ok! ###
+
+------------------------------------
+
+
+#### Testando TesteIncorrect_203 ####
+*********** Resultado:
+Parsing Incorrect_203.cprl...
+*** Syntax error detected near line 4, character 1:
+    Expecting "is" but found "begin" instead.
+Errors detected -- parsing terminated.
+
+*********** Esperado:
+Parsing Incorrect_203.cprl...
+*** Syntax error detected near line 4, character 1:
+    Expecting "is" but found "begin" instead.
+Errors detected -- parsing terminated.
+
+### TesteIncorrect_203 ok! ###
+
+------------------------------------
+
+
+#### Testando TesteIncorrect_204 ####
+*********** Resultado:
+Parsing Incorrect_204.cprl...
+Parsing complete.
+
+*********** Esperado:
+Parsing Incorrect_204.cprl...
+Parsing complete.
+
+### TesteIncorrect_204 ok! ###
+
+------------------------------------
+
+
+#### Testando TesteIncorrect_205 ####
+*********** Resultado:
+Parsing Incorrect_205.cprl...
+*** Syntax error detected near line 3, character 7:
+    Expecting ":" but found "=" instead.
+Errors detected -- parsing terminated.
+
+*********** Esperado:
+Parsing Incorrect_205.cprl...
+*** Syntax error detected near line 3, character 7:
+    Expecting ":" but found "=" instead.
+Errors detected -- parsing terminated.
+
+### TesteIncorrect_205 ok! ###
+
+------------------------------------
+
+
+#### Testando TesteIncorrect_206 ####
+*********** Resultado:
+Parsing Incorrect_206.cprl...
+Parsing complete.
+
+*********** Esperado:
+Parsing Incorrect_206.cprl...
+Parsing complete.
+
+### TesteIncorrect_206 ok! ###
+
+------------------------------------
+
+
+#### Testando TesteIncorrect_207 ####
+*********** Resultado:
+Parsing Incorrect_207.cprl...
+Parsing complete.
+
+*********** Esperado:
+Parsing Incorrect_207.cprl...
+Parsing complete.
+
+### TesteIncorrect_207 ok! ###
+
+------------------------------------
+
+
+#### Testando TesteIncorrect_208 ####
+*********** Resultado:
+Parsing Incorrect_208.cprl...
+Parsing complete.
+
+*********** Esperado:
+Parsing Incorrect_208.cprl...
+Parsing complete.
+
+### TesteIncorrect_208 ok! ###
+
+------------------------------------
+
+
+#### Testando TesteIncorrect_209 ####
+*********** Resultado:
+Parsing Incorrect_209.cprl...
+Parsing complete.
+
+*********** Esperado:
+Parsing Incorrect_209.cprl...
+Parsing complete.
+
+### TesteIncorrect_209 ok! ###
+
+------------------------------------
+
+
+#### Testando TesteIncorrect_210 ####
+*********** Resultado:
+Parsing Incorrect_210.cprl...
+*** Syntax error detected near line 10, character 1:
+    Expecting ";" but found "end" instead.
+Errors detected -- parsing terminated.
+
+*********** Esperado:
+Parsing Incorrect_210.cprl...
+*** Syntax error detected near line 10, character 1:
+    Expecting ";" but found "end" instead.
+Errors detected -- parsing terminated.
+
+### TesteIncorrect_210 ok! ###
+
+------------------------------------
+
+
+#### Testando TesteIncorrect_211 ####
+*********** Resultado:
+Parsing Incorrect_211.cprl...
+*** Syntax error detected near line 12, character 5:
+    Function name mismatch.
+Errors detected -- parsing terminated.
+
+*********** Esperado:
+Parsing Incorrect_211.cprl...
+*** Syntax error detected near line 12, character 5:
+    Function name mismatch.
+Errors detected -- parsing terminated.
+
+### TesteIncorrect_211 ok! ###
+
+------------------------------------
+
+
+#### Testando TesteIncorrect_212 ####
+*********** Resultado:
+Parsing Incorrect_212.cprl...
+Parsing complete.
+
+*********** Esperado:
+Parsing Incorrect_212.cprl...
+Parsing complete.
+
+### TesteIncorrect_212 ok! ###
+
+------------------------------------
+
+
+#### Testando TesteIncorrect_213 ####
+*********** Resultado:
+Parsing Incorrect_213.cprl...
+Parsing complete.
+
+*********** Esperado:
+Parsing Incorrect_213.cprl...
+Parsing complete.
+
+### TesteIncorrect_213 ok! ###
+
+------------------------------------
+
+
+#### Testando TesteIncorrect_214 ####
+*********** Resultado:
+Parsing Incorrect_214.cprl...
+Parsing complete.
+
+*********** Esperado:
+Parsing Incorrect_214.cprl...
+Parsing complete.
+
+### TesteIncorrect_214 ok! ###
+
+------------------------------------
+
+
+#### Testando TesteIncorrect_215 ####
+*********** Resultado:
+Parsing Incorrect_215.cprl...
+*** Syntax error detected near line 9, character 5:
+    Function name mismatch.
+Errors detected -- parsing terminated.
+
+*********** Esperado:
+Parsing Incorrect_215.cprl...
+*** Syntax error detected near line 9, character 5:
+    Function name mismatch.
+Errors detected -- parsing terminated.
+
+### TesteIncorrect_215 ok! ###
+
+------------------------------------
+
+
+#### Testando TesteIncorrect_216 ####
+*********** Resultado:
+Parsing Incorrect_216.cprl...
+Parsing complete.
+
+*********** Esperado:
+Parsing Incorrect_216.cprl...
+Parsing complete.
+
+### TesteIncorrect_216 ok! ###
+
+------------------------------------
+
+
+#### Testando TesteIncorrect_217 ####
+*********** Resultado:
+Parsing Incorrect_217.cprl...
+Parsing complete.
+
+*********** Esperado:
+Parsing Incorrect_217.cprl...
+Parsing complete.
+
+### TesteIncorrect_217 ok! ###
+
+------------------------------------
+
+
+#### Testando TesteIncorrect_218 ####
+*********** Resultado:
+Parsing Incorrect_218.cprl...
+*** Syntax error detected near line 13, character 12:
+    Identifier "inc" is not valid as an expression.
+Errors detected -- parsing terminated.
+
+*********** Esperado:
+Parsing Incorrect_218.cprl...
+*** Syntax error detected near line 13, character 12:
+    Identifier "inc" is not valid as an expression.
+Errors detected -- parsing terminated.
+
+### TesteIncorrect_218 ok! ###
+
+------------------------------------
+
+
+#### Testando TesteIncorrect_219 ####
+*********** Resultado:
+Parsing Incorrect_219.cprl...
+Parsing complete.
+
+*********** Esperado:
+Parsing Incorrect_219.cprl...
+Parsing complete.
+
+### TesteIncorrect_219 ok! ###
+
+------------------------------------
+
+
+#### Testando TesteIncorrect_220 ####
+*********** Resultado:
+Parsing Incorrect_220.cprl...
+Parsing complete.
+
+*********** Esperado:
+Parsing Incorrect_220.cprl...
+Parsing complete.
+
+### TesteIncorrect_220 ok! ###
+
+------------------------------------
+
+
+#### Testando TesteIncorrect_221 ####
+*********** Resultado:
+Parsing Incorrect_221.cprl...
+Parsing complete.
+
+*********** Esperado:
+Parsing Incorrect_221.cprl...
+Parsing complete.
+
+### TesteIncorrect_221 ok! ###
+
+------------------------------------
+
+
+#### Testando TesteIncorrect_222 ####
+*********** Resultado:
+Parsing Incorrect_222.cprl...
+Parsing complete.
+
+*********** Esperado:
+Parsing Incorrect_222.cprl...
+Parsing complete.
+
+### TesteIncorrect_222 ok! ###
+
+------------------------------------
+
+
+#### Testando TesteIncorrect_301 ####
+*********** Resultado:
+Parsing Incorrect_301.cprl...
+Parsing complete.
+
+*********** Esperado:
+Parsing Incorrect_301.cprl...
+Parsing complete.
+
+### TesteIncorrect_301 ok! ###
+
+------------------------------------
+
+
+#### Testando TesteIncorrect_302 ####
+*********** Resultado:
+Parsing Incorrect_302.cprl...
+Parsing complete.
+
+*********** Esperado:
+Parsing Incorrect_302.cprl...
+Parsing complete.
+
+### TesteIncorrect_302 ok! ###
+
+------------------------------------
+
+
+#### Testando TesteIncorrect_303 ####
+*********** Resultado:
+Parsing Incorrect_303.cprl...
+Parsing complete.
+
+*********** Esperado:
+Parsing Incorrect_303.cprl...
+Parsing complete.
+
+### TesteIncorrect_303 ok! ###
+
+------------------------------------
+
+
+#### Testando TesteIncorrect_304 ####
+*********** Resultado:
+Parsing Incorrect_304.cprl...
+Parsing complete.
+
+*********** Esperado:
+Parsing Incorrect_304.cprl...
+Parsing complete.
+
+### TesteIncorrect_304 ok! ###
+
+------------------------------------
+
+
+#### Testando TesteIncorrect_305 ####
+*********** Resultado:
+Parsing Incorrect_305.cprl...
+*** Syntax error detected near line 1, character 16:
+    Invalid constant.
+Errors detected -- parsing terminated.
+
+*********** Esperado:
+Parsing Incorrect_305.cprl...
+*** Syntax error detected near line 1, character 16:
+    Invalid constant.
+Errors detected -- parsing terminated.
+
+### TesteIncorrect_305 ok! ###
+
+------------------------------------
+
+
+]]></system-out>
+  <system-err><![CDATA[Processando TesteIncorrect_101
+Processando TesteIncorrect_102
+Processando TesteIncorrect_103
+Processando TesteIncorrect_104
+Processando TesteIncorrect_105
+Processando TesteIncorrect_106
+Processando TesteIncorrect_107
+Processando TesteIncorrect_108
+Processando TesteIncorrect_109
+Processando TesteIncorrect_110
+Processando TesteIncorrect_111
+Processando TesteIncorrect_112
+Processando TesteIncorrect_113
+Processando TesteIncorrect_114
+Processando TesteIncorrect_115
+Processando TesteIncorrect_116
+Processando TesteIncorrect_117
+Processando TesteIncorrect_118
+Processando TesteIncorrect_119
+Processando TesteIncorrect_120
+Processando TesteIncorrect_121
+Processando TesteIncorrect_122
+Processando TesteIncorrect_123
+Processando TesteIncorrect_124
+Processando TesteIncorrect_125
+Processando TesteIncorrect_126
+Processando TesteIncorrect_127
+Processando TesteIncorrect_128
+Processando TesteIncorrect_129
+Processando TesteIncorrect_201
+Processando TesteIncorrect_202
+Processando TesteIncorrect_203
+Processando TesteIncorrect_204
+Processando TesteIncorrect_205
+Processando TesteIncorrect_206
+Processando TesteIncorrect_207
+Processando TesteIncorrect_208
+Processando TesteIncorrect_209
+Processando TesteIncorrect_210
+Processando TesteIncorrect_211
+Processando TesteIncorrect_212
+Processando TesteIncorrect_213
+Processando TesteIncorrect_214
+Processando TesteIncorrect_215
+Processando TesteIncorrect_216
+Processando TesteIncorrect_217
+Processando TesteIncorrect_218
+Processando TesteIncorrect_219
+Processando TesteIncorrect_220
+Processando TesteIncorrect_221
+Processando TesteIncorrect_222
+Processando TesteIncorrect_301
+Processando TesteIncorrect_302
+Processando TesteIncorrect_303
+Processando TesteIncorrect_304
+Processando TesteIncorrect_305
+]]></system-err>
+</testsuite>
