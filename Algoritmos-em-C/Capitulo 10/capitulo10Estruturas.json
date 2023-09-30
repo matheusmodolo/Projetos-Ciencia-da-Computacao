@@ -1,0 +1,211 @@
+[
+  {
+    "description": "capitulo10Estruturas",
+    "programmingLanguage": "C",
+    "tests": [
+      {
+        "name": "ex10.1",
+        "testCases": [
+          {
+            "input": "1\n2\n1990\n1\n2\n2000",
+            "output": "01/02/1990 \u003c\u003d 01/02/2000"
+          },
+          {
+            "input": "20\n3\n2000\n31\n2\n2000",
+            "output": "31/02/2000 \u003c\u003d 20/03/2000"
+          },
+          {
+            "input": "25\n2\n2019\n24\n2\n2019",
+            "output": "24/02/2019 \u003c\u003d 25/02/2019"
+          },
+          {
+            "input": "30\n1\n2000\n30\n1\n2000",
+            "output": "30/01/2000 \u003c\u003d 30/01/2000"
+          }
+        ]
+      },
+      {
+        "name": "ex10.2",
+        "testCases": [
+          {
+            "input": "1\n4\n2014",
+            "output": "O dia do ano da data 01/04/2014 eh 91."
+          },
+          {
+            "input": "1\n4\n2016",
+            "output": "O dia do ano da data 01/04/2016 eh 92."
+          }
+        ]
+      },
+      {
+        "name": "ex10.3",
+        "testCases": [
+          {
+            "input": "254783",
+            "output": "Hora correspondente: 70:46:23"
+          }
+        ]
+      },
+      {
+        "name": "ex10.4",
+        "testCases": [
+          {
+            "input": "10\n5\n3\n9",
+            "output": "(10.00 + 5.00i) + (3.00 + 9.00i) \u003d (13.00 + 14.00i)"
+          }
+        ]
+      },
+      {
+        "name": "ex10.5",
+        "testCases": [
+          {
+            "input": "1\n2\n2\n3",
+            "output": "1.00/2.00 + 2.00/3.00 \u003d 7.00/6.00\n1.00/2.00 - 2.00/3.00 \u003d -1.00/6.00\n1.00/2.00 * 2.00/3.00 \u003d 2.00/6.00\n1.00/2.00 / 2.00/3.00 \u003d 3.00/4.00"
+          }
+        ]
+      },
+      {
+        "name": "ex10.6",
+        "testCases": [
+          {
+            "input": "50\n60\n70",
+            "output": "Cor: rgb( 50, 60, 70 )"
+          },
+          {
+            "input": "-10\n-10\n-10",
+            "output": "Cor: rgb( 0, 0, 0 )"
+          },
+          {
+            "input": "260\n180\n280",
+            "output": "Cor: rgb( 255, 180, 255 )"
+          }
+        ]
+      },
+      {
+        "name": "ex10.7",
+        "testCases": [
+          {
+            "input": "50\n60\n70",
+            "output": "Cor: rgb( 50, 60, 70 )\ngetVermelho(): 50\ngetVerde(): 60\ngetAzul(): 70"
+          },
+          {
+            "input": "-10\n-10\n-10",
+            "output": "Cor: rgb( 0, 0, 0 )\ngetVermelho(): 0\ngetVerde(): 0\ngetAzul(): 0"
+          },
+          {
+            "input": "260\n180\n280",
+            "output": "Cor: rgb( 255, 180, 255 )\ngetVermelho(): 255\ngetVerde(): 180\ngetAzul(): 255"
+          }
+        ]
+      },
+      {
+        "name": "ex10.8",
+        "testCases": [
+          {
+            "input": "50\n60\n70\n-1\n600\n190",
+            "output": "Cor: rgb( 50, 60, 70 )\nCor alterada: rgb( 0, 255, 190 )"
+          }
+        ]
+      },
+      {
+        "name": "ex10.9",
+        "testCases": [
+          {
+            "input": "255\n180\n90",
+            "output": "Cor base: rgb( 255, 180, 90 )\nCor escurecida: rgb( 178, 125, 62 )"
+          }
+        ]
+      },
+      {
+        "name": "ex10.10",
+        "testCases": [
+          {
+            "input": "10\n30\n40",
+            "output": "Cor base: rgb( 10, 30, 40 )\nCor clareada: rgb( 14, 42, 57 )"
+          },
+          {
+            "input": "0\n0\n0",
+            "output": "Cor base: rgb( 0, 0, 0 )\nCor clareada: rgb( 3, 3, 3 )"
+          },
+          {
+            "input": "1\n2\n1",
+            "output": "Cor base: rgb( 1, 2, 1 )\nCor clareada: rgb( 4, 4, 4 )"
+          },
+          {
+            "input": "100\n150\n230",
+            "output": "Cor base: rgb( 100, 150, 230 )\nCor clareada: rgb( 142, 214, 255 )"
+          }
+        ]
+      },
+      {
+        "name": "ex10.11",
+        "testCases": [
+          {
+            "input": "10\n40\n60\n10",
+            "output": "(+10, +40) \u003d\u003d\u003d\u003d\u003d|\n|               |\n|               |\n|\u003d\u003d\u003d\u003d\u003d (+60, +10)\nArea: 1500"
+          },
+          {
+            "input": "-60\n-10\n-10\n-50",
+            "output": "(-60, -10) \u003d\u003d\u003d\u003d\u003d|\n|               |\n|               |\n|\u003d\u003d\u003d\u003d\u003d (-10, -50)\nArea: 2000"
+          },
+          {
+            "input": "-60\n30\n60\n-30",
+            "output": "(-60, +30) \u003d\u003d\u003d\u003d\u003d|\n|               |\n|               |\n|\u003d\u003d\u003d\u003d\u003d (+60, -30)\nArea: 7200"
+          }
+        ]
+      },
+      {
+        "name": "ex10.12",
+        "testCases": [
+          {
+            "input": "10\n40\n60\n10",
+            "output": "(+10, +40) \u003d\u003d\u003d\u003d\u003d|\n|               |\n|               |\n|\u003d\u003d\u003d\u003d\u003d (+60, +10)\nCentro: (+35, +25)"
+          },
+          {
+            "input": "-60\n-10\n-10\n-50",
+            "output": "(-60, -10) \u003d\u003d\u003d\u003d\u003d|\n|               |\n|               |\n|\u003d\u003d\u003d\u003d\u003d (-10, -50)\nCentro: (-35, -30)"
+          },
+          {
+            "input": "-60\n30\n60\n-30",
+            "output": "(-60, +30) \u003d\u003d\u003d\u003d\u003d|\n|               |\n|               |\n|\u003d\u003d\u003d\u003d\u003d (+60, -30)\nCentro: (+0, +0)"
+          }
+        ]
+      },
+      {
+        "name": "ex10.13",
+        "testCases": [
+          {
+            "input": "10\n40\n60\n10\n50\n-10",
+            "output": "Retangulo original:\n(+10, +40) \u003d\u003d\u003d\u003d\u003d|\n|               |\n|               |\n|\u003d\u003d\u003d\u003d\u003d (+60, +10)\nRetangulo movido:\n(+60, +30) \u003d\u003d\u003d\u003d\u003d|\n|               |\n|               |\n|\u003d\u003d\u003d\u003d\u003d (+110, +0)"
+          }
+        ]
+      },
+      {
+        "name": "ex10.14",
+        "testCases": [
+          {
+            "input": "-60\n30\n60\n-30\n-70\n20\n-50\n20\n60\n30\n55\n-20\n40\n-40",
+            "output": "(-70, +20): nao contido!\n(-50, +20): contido!\n(+60, +30): contido!\n(+55, -20): contido!\n(+40, -40): nao contido!"
+          }
+        ]
+      },
+      {
+        "name": "ex10.15",
+        "testCases": [
+          {
+            "input": "10\n40\n60\n10\n30\n50\n50\n20",
+            "output": "Os retangulos se interceptam!"
+          },
+          {
+            "input": "10\n40\n60\n10\n-30\n60\n20\n-10",
+            "output": "Os retangulos se interceptam!"
+          },
+          {
+            "input": "10\n40\n60\n10\n30\n100\n60\n50",
+            "output": "Os retangulos nao se interceptam!"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,77 @@
+[
+  {
+    "description": "capituloBibliotecaMatematica",
+    "programmingLanguage": "C",
+    "tests": [
+      {
+        "name": "ex6.1",
+        "testCases": [
+          {
+            "input": "1\n5\n4",
+            "output": "Delta: 9.00\nS \u003d {-4.00, -1.00}"
+          },
+          {
+            "input": "1\n4\n4",
+            "output": "Delta: 0.00\nS \u003d {-2.00}"
+          },
+          {
+            "input": "2\n2\n1",
+            "output": "Delta: -4.00\nS \u003d {}"
+          },
+          {
+            "input": "0\n3\n-2",
+            "output": "Nao existe equacao do segundo grau!"
+          }
+        ]
+      },
+      {
+        "name": "ex6.2",
+        "testCases": [
+          {
+            "input": "2\n10",
+            "output": "2.00 ^ 10.00 \u003d 1024.00"
+          }
+        ]
+      },
+      {
+        "name": "ex6.3",
+        "testCases": [
+          {
+            "input": "3.5",
+            "output": "Maior inteiro mais proximo: 4.00\nMenor inteiro mais proximo: 3.00"
+          },
+          {
+            "input": "-3.5",
+            "output": "Maior inteiro mais proximo: -3.00\nMenor inteiro mais proximo: -4.00"
+          }
+        ]
+      },
+      {
+        "name": "ex6.4",
+        "testCases": [
+          {
+            "input": "9.5",
+            "output": "Valor absoluto: 9.50"
+          },
+          {
+            "input": "-9.5",
+            "output": "Valor absoluto: 9.50"
+          }
+        ]
+      },
+      {
+        "name": "ex6.5",
+        "testCases": [
+          {
+            "input": "9",
+            "output": "Raiz quadrada de 9.00: 3.00"
+          },
+          {
+            "input": "-5",
+            "output": "Quadrado de -5.00: 25.00"
+          }
+        ]
+      }
+    ]
+  }
+]

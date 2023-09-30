@@ -1,0 +1,71 @@
+[
+  {
+    "description": "capituloArraysMultidimensionais",
+    "programmingLanguage": "C",
+    "tests": [
+      {
+        "name": "ex5.1",
+        "testCases": [
+          {
+            "input": "1\n2\n3\n4\n5\n6",
+            "output": "001 002\n003 004\n005 006"
+          }
+        ]
+      },
+      {
+        "name": "ex5.2",
+        "testCases": [
+          {
+            "input": "4\n7\n8\n5\n1\n2\n6\n5\n8\n9\n5\n2\n1\n4\n5\n6\n3\n2",
+            "output": "array1:       array2:       arraySoma:\n004 007 008   009 005 002   013 012 010\n005 001 002 + 001 004 005 \u003d 006 005 007\n006 005 008   006 003 002   012 008 010"
+          }
+        ]
+      },
+      {
+        "name": "ex5.3",
+        "testCases": [
+          {
+            "input": "1\n4\n5\n8\n7\n4\n5\n2\n3\n6\n5\n4\n5",
+            "output": "arrayMult:\n005 020 025 040\n035 020 025 010\n015 030 025 020"
+          }
+        ]
+      },
+      {
+        "name": "ex5.4",
+        "testCases": [
+          {
+            "input": "4\n5\n6\n1",
+            "output": "Determinante: -26"
+          }
+        ]
+      },
+      {
+        "name": "ex5.5",
+        "testCases": [
+          {
+            "input": "4\n5\n7\n8\n2\n1\n3\n6\n5",
+            "output": "Determinante: 125"
+          }
+        ]
+      },
+      {
+        "name": "ex5.6",
+        "testCases": [
+          {
+            "input": "1\n2\n3\n4\n5\n6",
+            "output": "M:\n001 002 003\n004 005 006\n\nMt:\n001 004\n002 005\n003 006"
+          }
+        ]
+      },
+      {
+        "name": "ex5.7",
+        "testCases": [
+          {
+            "input": "2\n3\n0\n1\n-1\n4\n1\n2\n3\n-2\n0\n4",
+            "output": "A x B \u003d\n-04 004 018\n-02 000 004\n-09 -02 013"
+          }
+        ]
+      }
+    ]
+  }
+]

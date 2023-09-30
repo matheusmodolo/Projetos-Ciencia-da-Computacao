@@ -1,0 +1,70 @@
+[
+  {
+    "description": "capituloPonteiros",
+    "programmingLanguage": "C",
+    "tests": [
+      {
+        "name": "ex8.1",
+        "testCases": [
+          {
+            "input": "3\n6\n7.6\n5\n4\n3\n9.8\n3\n4\n7",
+            "output": "Somatorio: 52.40\nMedia: 5.24"
+          }
+        ]
+      },
+      {
+        "name": "ex8.2",
+        "testCases": [
+          {
+            "input": "6\n19",
+            "output": "Antes:\n    n1: 6\n    n2: 19\nDepois:\n    n1: 19\n    n2: 6"
+          }
+        ]
+      },
+      {
+        "name": "ex8.3",
+        "testCases": [
+          {
+            "input": "12456",
+            "output": "12456 segundo(s) corresponde(m) a:\n    3 hora(s)\n    27 minuto(s)\n    36 segundo(s)"
+          }
+        ]
+      },
+      {
+        "name": "ex8.4",
+        "testCases": [
+          {
+            "input": "123\n2019",
+            "output": "O dia 123 do ano 2019 cai no dia 3 do mes 5."
+          },
+          {
+            "input": "123\n2016",
+            "output": "O dia 123 do ano 2016 cai no dia 2 do mes 5."
+          }
+        ]
+      },
+      {
+        "name": "ex8.5",
+        "testCases": [
+          {
+            "input": "2\n3\n5\n7\n2\n3\n9\n1\n2\n8\n3",
+            "output": "O valor 3 foi encontrado na posicao 1."
+          },
+          {
+            "input": "2\n3\n5\n7\n2\n3\n9\n1\n2\n8\n15",
+            "output": "O valor 15 nao foi encontrado."
+          }
+        ]
+      },
+      {
+        "name": "ex8.6",
+        "testCases": [
+          {
+            "input": "2\n3\n4\n5\n6\n2\n2\n2\n2\n2",
+            "output": "2.00 x 2.00 \u003d 4.00\n3.00 x 2.00 \u003d 6.00\n4.00 x 2.00 \u003d 8.00\n5.00 x 2.00 \u003d 10.00\n6.00 x 2.00 \u003d 12.00"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,243 @@
+[
+  {
+    "description": "capituloCaracteresStrings",
+    "programmingLanguage": "C",
+    "tests": [
+      {
+        "name": "ex9.1",
+        "testCases": [
+          {
+            "input": "essa eh uma string",
+            "output": "e, s, s, a."
+          }
+        ]
+      },
+      {
+        "name": "ex9.2",
+        "testCases": [
+          {
+            "input": "ola, como vai, tudo bem?",
+            "output": "Primeiro caractere: o\nUltimo caractere: ?\nNumero de caracteres: 24"
+          }
+        ]
+      },
+      {
+        "name": "ex9.3",
+        "testCases": [
+          {
+            "input": "um dois tres",
+            "output": "u, \u0027 \u0027, o, s, t, e"
+          }
+        ]
+      },
+      {
+        "name": "ex9.4",
+        "testCases": [
+          {
+            "input": "um dois tres",
+            "output": "m, d, i, \u0027 \u0027, r, s"
+          }
+        ]
+      },
+      {
+        "name": "ex9.5",
+        "testCases": [
+          {
+            "input": "Fernanda",
+            "output": "Fernanda\nFernanda\nFernanda\nFernanda\nFernanda"
+          }
+        ]
+      },
+      {
+        "name": "ex9.6",
+        "testCases": [
+          {
+            "input": "Aurora",
+            "output": "Aurora\nAurora\nAurora\nAurora\nAurora\nAurora"
+          }
+        ]
+      },
+      {
+        "name": "ex9.7",
+        "testCases": [
+          {
+            "input": "Joao\nMaria\nFernanda\nDavid\nRafaela\nRafaela\nRenata\nCecilia\nJoana\nZelia",
+            "output": "Joao - Maria: ORDEM CRESCENTE\nFernanda - David: ORDEM DECRESCENTE\nRafaela - Rafaela: IGUAIS\nRenata - Cecilia: ORDEM DECRESCENTE\nJoana - Zelia: ORDEM CRESCENTE"
+          }
+        ]
+      },
+      {
+        "name": "ex9.8",
+        "testCases": [
+          {
+            "input": "Luiz\nEverton\nBreno",
+            "output": "Breno, Everton e Luiz"
+          }
+        ]
+      },
+      {
+        "name": "ex9.9",
+        "testCases": [
+          {
+            "input": "abacate verde",
+            "output": "Invertida: edrev etacaba"
+          }
+        ]
+      },
+      {
+        "name": "ex9.10",
+        "testCases": [
+          {
+            "input": "vou comprar um lanche",
+            "output": "21 caractere(s)!"
+          }
+        ]
+      },
+      {
+        "name": "ex9.11",
+        "testCases": [
+          {
+            "input": "a\ncamarao assado\nmas que cabelo sujo!\nfim",
+            "output": "\"camarao assado\" tem 5 ocorrencia(s) do caractere \u0027a\u0027\nFrase: \"mas que cabelo sujo!\" tem 2 ocorrencia(s) do caractere \u0027a\u0027\nFrase:"
+          }
+        ]
+      },
+      {
+        "name": "ex9.12",
+        "testCases": [
+          {
+            "input": "UI, QUE medo DO white walker!",
+            "output": "A/a: 1\nB/b: 0\nC/c: 0\nD/d: 2\nE/e: 4"
+          }
+        ]
+      },
+      {
+        "name": "ex9.13",
+        "testCases": [
+          {
+            "input": "UI, QUE medo DO white walker!",
+            "output": "A/a: 1\nE/e: 4\nI/i: 2\nO/o: 2\nU/u: 2"
+          }
+        ]
+      },
+      {
+        "name": "ex9.14",
+        "testCases": [
+          {
+            "input": "Fui comprar um COMPUTADOR.",
+            "output": "FUI COMPRAR UM COMPUTADOR."
+          }
+        ]
+      },
+      {
+        "name": "ex9.15",
+        "testCases": [
+          {
+            "input": "Fui comprar um COMPUTADOR.",
+            "output": "fui comprar um computador."
+          }
+        ]
+      },
+      {
+        "name": "ex9.16",
+        "testCases": [
+          {
+            "input": "ja acabou, JESSICA?\na",
+            "output": "j cbou, JESSIC?"
+          }
+        ]
+      },
+      {
+        "name": "ex9.17",
+        "testCases": [
+          {
+            "input": "A aranha arranha a ra.",
+            "output": "Quantidade de palavras: 5"
+          }
+        ]
+      },
+      {
+        "name": "ex9.18",
+        "testCases": [
+          {
+            "input": "arara",
+            "output": "\"arara\" eh um palindromo!"
+          },
+          {
+            "input": "Arara",
+            "output": "\"Arara\" nao eh um palindromo!"
+          },
+          {
+            "input": "ArarA",
+            "output": "\"ArarA\" eh um palindromo!"
+          },
+          {
+            "input": "Macaco",
+            "output": "\"Macaco\" nao eh um palindromo!"
+          }
+        ]
+      },
+      {
+        "name": "ex9.19",
+        "testCases": [
+          {
+            "input": "Girafa\n0\n3",
+            "output": "Recorte: Gir"
+          },
+          {
+            "input": "Girafa\n5\n3",
+            "output": "Recorte: Girafa"
+          },
+          {
+            "input": "Girafa\n5\n10",
+            "output": "Recorte: Girafa"
+          },
+          {
+            "input": "Girafa\n10\n12",
+            "output": "Recorte: Girafa"
+          }
+        ]
+      },
+      {
+        "name": "ex9.20",
+        "testCases": [
+          {
+            "input": "rabanete\nbane",
+            "output": "\"bane\" esta contida em \"rabanete\""
+          },
+          {
+            "input": "Hamburguer\nHambo",
+            "output": "\"Hambo\" nao esta contida em \"Hamburguer\""
+          }
+        ]
+      },
+      {
+        "name": "ex9.21",
+        "testCases": [
+          {
+            "input": "um texto qualquer",
+            "output": "                       um texto qualquer"
+          }
+        ]
+      },
+      {
+        "name": "ex9.22",
+        "testCases": [
+          {
+            "input": "um texto qualquer",
+            "output": "                                              um texto qualquer"
+          }
+        ]
+      },
+      {
+        "name": "ex9.23",
+        "testCases": [
+          {
+            "input": "um texto qualquer",
+            "output": "++\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d++\n|| um texto qualquer ||\n++\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d++"
+          }
+        ]
+      }
+    ]
+  }
+]

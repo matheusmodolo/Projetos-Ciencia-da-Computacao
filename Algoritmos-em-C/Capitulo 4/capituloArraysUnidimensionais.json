@@ -1,0 +1,179 @@
+[
+  {
+    "description": "capituloArraysUnidimensionais",
+    "programmingLanguage": "C",
+    "tests": [
+      {
+        "name": "ex4.1",
+        "testCases": [
+          {
+            "input": "4\n5\n7\n10\n-8",
+            "output": "arrayCubo[0] \u003d 64\narrayCubo[1] \u003d 125\narrayCubo[2] \u003d 343\narrayCubo[3] \u003d 1000\narrayCubo[4] \u003d -512"
+          }
+        ]
+      },
+      {
+        "name": "ex4.2",
+        "testCases": [
+          {
+            "input": "4\n5\n7\n10\n-8\n5",
+            "output": "arrayMult[0] \u003d 20\narrayMult[1] \u003d 25\narrayMult[2] \u003d 35\narrayMult[3] \u003d 50\narrayMult[4] \u003d -40"
+          }
+        ]
+      },
+      {
+        "name": "ex4.3",
+        "testCases": [
+          {
+            "input": "4\n5.5\n7\n10.7\n-8",
+            "output": "Somatorio: 19.20\nProdutorio: -13182.40"
+          }
+        ]
+      },
+      {
+        "name": "ex4.4",
+        "testCases": [
+          {
+            "input": "4\n5\n7\n10\n-8\n5",
+            "output": "Indice 0: NAO ACHEI\nIndice 1: ACHEI\nIndice 2: NAO ACHEI\nIndice 3: NAO ACHEI\nIndice 4: NAO ACHEI"
+          }
+        ]
+      },
+      {
+        "name": "ex4.5",
+        "testCases": [
+          {
+            "input": "4\n5\n7\n10\n-8\n5",
+            "output": "O array contem 1 ocorrencia do valor 5."
+          },
+          {
+            "input": "7\n5\n7\n10\n7\n7",
+            "output": "O array contem 3 ocorrencias do valor 7."
+          },
+          {
+            "input": "4\n5\n7\n10\n-8\n0",
+            "output": "O array nao contem o valor 0."
+          }
+        ]
+      },
+      {
+        "name": "ex4.6",
+        "testCases": [
+          {
+            "input": "4\n5\n7\n10\n-8\n5",
+            "output": "O valor 5 foi encontrado no indice 1 do array."
+          },
+          {
+            "input": "9\n5\n7\n9\n7\n9",
+            "output": "O valor 9 foi encontrado nos indices 0 e 3 do array."
+          },
+          {
+            "input": "7\n5\n7\n10\n7\n7",
+            "output": "O valor 7 foi encontrado nos indices 0, 2 e 4 do array."
+          },
+          {
+            "input": "4\n5\n7\n10\n-8\n0",
+            "output": "O array nao contem o valor 0."
+          }
+        ]
+      },
+      {
+        "name": "ex4.7",
+        "testCases": [
+          {
+            "input": "5\n8\n7\n2\n8\n12\n-10\n-5\n-20\n9",
+            "output": "arraySoma[0] \u003d 17\narraySoma[1] \u003d -2\narraySoma[2] \u003d 2\narraySoma[3] \u003d -18\narraySoma[4] \u003d 17"
+          }
+        ]
+      },
+      {
+        "name": "ex4.8",
+        "testCases": [
+          {
+            "input": "4\n5\n7\n10\n-8",
+            "output": "Numeros pares: 4 10 -8.\nNumeros impares: 5 7."
+          },
+          {
+            "input": "4\n8\n6\n10\n-8",
+            "output": "Numeros pares: 4 8 6 10 -8.\nNumeros impares: nao ha."
+          },
+          {
+            "input": "5\n9\n7\n13\n-9",
+            "output": "Numeros pares: nao ha.\nNumeros impares: 5 9 7 13 -9."
+          }
+        ]
+      },
+      {
+        "name": "ex4.9",
+        "testCases": [
+          {
+            "input": "4\n8\n6\n10\n-8",
+            "output": "arrayInv[0] \u003d -8\narrayInv[1] \u003d 10\narrayInv[2] \u003d 6\narrayInv[3] \u003d 8\narrayInv[4] \u003d 4"
+          }
+        ]
+      },
+      {
+        "name": "ex4.10",
+        "testCases": [
+          {
+            "input": "4\n5\n7\n10\n-8\n5",
+            "output": "arrayCopia[0] \u003d 7\narrayCopia[1] \u003d 10"
+          },
+          {
+            "input": "4\n5\n7\n10\n-8\n100",
+            "output": "Nao houve copia!"
+          }
+        ]
+      },
+      {
+        "name": "ex4.11",
+        "testCases": [
+          {
+            "input": "20\n5\n4\n5\n7\n10\n-8\n15",
+            "output": "array[0] \u003d 15\narray[1] \u003d 4\narray[2] \u003d 5\narray[3] \u003d 7\narray[4] \u003d 10\narray[5] \u003d -8"
+          }
+        ]
+      },
+      {
+        "name": "ex4.12",
+        "testCases": [
+          {
+            "input": "4\n5\n7\n10\n-8",
+            "output": "array[0] \u003d 5\narray[1] \u003d 7\narray[2] \u003d 10\narray[3] \u003d -8"
+          }
+        ]
+      },
+      {
+        "name": "ex4.13",
+        "testCases": [
+          {
+            "input": "4\n5\n7\n10\n-8\n9\n10\n14\n3\n121\n20\n5",
+            "output": "array[0] \u003d 4\narray[1] \u003d 5\narray[2] \u003d 7\narray[3] \u003d 10\narray[4] \u003d -8\narray[5] \u003d 10\narray[6] \u003d 14\narray[7] \u003d 3\narray[8] \u003d 121"
+          }
+        ]
+      },
+      {
+        "name": "ex4.14",
+        "testCases": [
+          {
+            "input": "4\n5\n7\n10\n-8\n9\n10\n14\n3\n121",
+            "output": "array[0] \u003d 5\narray[1] \u003d 7\narray[2] \u003d 9\narray[3] \u003d 3\narray[4] \u003d 121"
+          }
+        ]
+      },
+      {
+        "name": "ex4.15",
+        "testCases": [
+          {
+            "input": "5\n8\n7\n2\n8\n5\n-10\n-5\n8\n2",
+            "output": "arrayInterseccao[0] \u003d 5\narrayInterseccao[1] \u003d 8\narrayInterseccao[2] \u003d 2"
+          },
+          {
+            "input": "5\n8\n7\n2\n8\n12\n-10\n-5\n-20\n9",
+            "output": "Nao ha interseccao entre os elementos dos dois arrays fornecidos!"
+          }
+        ]
+      }
+    ]
+  }
+]

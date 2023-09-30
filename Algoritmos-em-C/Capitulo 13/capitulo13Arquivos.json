@@ -1,0 +1,35 @@
+[
+  {
+    "description": "capitulo13Arquivos",
+    "programmingLanguage": "C",
+    "tests": [
+      {
+        "name": "ex13.1",
+        "testCases": [
+          {
+            "input": "",
+            "output": "Media: 6.73"
+          }
+        ]
+      },
+      {
+        "name": "ex13.2",
+        "testCases": [
+          {
+            "input": "",
+            "output": "***** (5)\n****** (6)\n******* (7)\n********* (9)\n**** (4)\n*** (3)\n********** (10)\n***** (5)"
+          }
+        ]
+      },
+      {
+        "name": "ex13.3",
+        "testCases": [
+          {
+            "input": "",
+            "output": "Numero: 7\nAbsoluto da diferenca: 3\nGerando arquivo \u0027tri1.txt\u0027...\n\nNumero: 6\nAbsoluto da diferenca: 4\nGerando arquivo \u0027tri2.txt\u0027...\n\nNumero: 5\nAbsoluto da diferenca: 5\nGerando arquivo \u0027tri3.txt\u0027...\n\nNumero: 8\nAbsoluto da diferenca: 2\nGerando arquivo \u0027tri4.txt\u0027...\n\nNumero: 4\nAbsoluto da diferenca: 6\nGerando arquivo \u0027tri5.txt\u0027...\n\nConteudo do arquivo \u0027tri1.txt\u0027:\n*\n**\n***\nConteudo do arquivo \u0027tri2.txt\u0027:\n*\n**\n***\n****\nConteudo do arquivo \u0027tri3.txt\u0027:\n*\n**\n***\n****\n*****\nConteudo do arquivo \u0027tri4.txt\u0027:\n*\n**\nConteudo do arquivo \u0027tri5.txt\u0027:\n*\n**\n***\n****\n*****\n******"
+          }
+        ]
+      }
+    ]
+  }
+]

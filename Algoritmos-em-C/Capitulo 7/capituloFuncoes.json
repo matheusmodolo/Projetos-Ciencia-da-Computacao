@@ -1,0 +1,150 @@
+[
+  {
+    "description": "capituloFuncoesMetodos",
+    "programmingLanguage": "C",
+    "tests": [
+      {
+        "name": "ex7.1",
+        "testCases": [
+          {
+            "input": "5\n6\n-7\n8\n9",
+            "output": "absoluto(5) \u003d 5\nabsoluto(6) \u003d 6\nabsoluto(-7) \u003d 7\nabsoluto(8) \u003d 8\nabsoluto(9) \u003d 9"
+          }
+        ]
+      },
+      {
+        "name": "ex7.2",
+        "testCases": [
+          {
+            "input": "5",
+            "output": "Area \u003d 78.54\nCircunferencia \u003d 31.42"
+          }
+        ]
+      },
+      {
+        "name": "ex7.3",
+        "testCases": [
+          {
+            "input": "2\n3\n4\n6\n5\n5\n-6\n4\n-7\n-8\n3\n4\n2",
+            "output": "2.00, 3.00: O maior valor e 3.00\n4.00, 6.00: O maior valor e 6.00\n5.00, 5.00: Eles sao iguais\n4.00, 3.00: O maior valor e 4.00\n4.00, 2.00: O maior valor e 4.00"
+          }
+        ]
+      },
+      {
+        "name": "ex7.4",
+        "testCases": [
+          {
+            "input": "5\n4\n9\n-7\n8\n-8\n-9\n-4\n3",
+            "output": "Somatorio de 1 a 5: 15\nSomatorio de 1 a 4: 10\nSomatorio de 1 a 9: 45\nSomatorio de 1 a 8: 36\nSomatorio de 1 a 3: 6"
+          }
+        ]
+      },
+      {
+        "name": "ex7.5",
+        "testCases": [
+          {
+            "input": "8\n4\n7\n3\n21\n7\n9\n5\n10\n5",
+            "output": "8 eh par e 8 eh divisivel por 4\n7 eh impar e 7 nao eh divisivel por 3\n21 eh impar e 21 eh divisivel por 7\n9 eh impar e 9 nao eh divisivel por 5\n10 eh par e 10 eh divisivel por 5"
+          }
+        ]
+      },
+      {
+        "name": "ex7.6",
+        "testCases": [
+          {
+            "input": "8\n10\n5\n-8\n9\n-7\n-8\n-7\n50",
+            "output": "Soma dos divisores de 8: 7\nSoma dos divisores de 10: 8\nSoma dos divisores de 5: 1\nSoma dos divisores de 9: 4\nSoma dos divisores de 50: 43"
+          }
+        ]
+      },
+      {
+        "name": "ex7.7",
+        "testCases": [
+          {
+            "input": "",
+            "output": "1: nao eh primo\n2: eh primo\n3: eh primo\n4: nao eh primo\n5: eh primo\n6: nao eh primo\n7: eh primo\n8: nao eh primo\n9: nao eh primo\n10: nao eh primo\n11: eh primo\n12: nao eh primo\n13: eh primo\n14: nao eh primo\n15: nao eh primo\n16: nao eh primo\n17: eh primo\n18: nao eh primo\n19: eh primo\n20: nao eh primo"
+          }
+        ]
+      },
+      {
+        "name": "ex7.8",
+        "testCases": [
+          {
+            "input": "220\n284\n128\n752\n789\n568\n1184\n1210\n874\n138",
+            "output": "220 e 284 sao amigos\n128 e 752 nao sao amigos\n789 e 568 nao sao amigos\n1184 e 1210 sao amigos\n874 e 138 nao sao amigos"
+          }
+        ]
+      },
+      {
+        "name": "ex7.9",
+        "testCases": [
+          {
+            "input": "2\n2\n2\n2\n3\n-10\n-5\n5\n3\n4\n5\n7\n7\n-15\n-19\n8\n1\n10\n20",
+            "output": "Valores 2, 2 e 2: triangulo equilatero\nValores 2, 3 e 5: nao formam um triangulo\nValores 3, 4 e 5: triangulo escaleno\nValores 7, 7 e 8: triangulo isosceles\nValores 1, 10 e 20: nao formam um triangulo"
+          }
+        ]
+      },
+      {
+        "name": "ex7.10",
+        "testCases": [
+          {
+            "input": "1841",
+            "output": "Digito verificador de 1841: 4"
+          },
+          {
+            "input": "6857",
+            "output": "Digito verificador de 6857: 8"
+          },
+          {
+            "input": "751",
+            "output": "Digito verificador de 751: 0"
+          }
+        ]
+      },
+      {
+        "name": "ex7.11",
+        "testCases": [
+          {
+            "input": "18414",
+            "output": "Numero completo: 18414\nNumero: 1841\nDigito: 4\nDigito calculado: 4\nO numero fornecido esta correto!"
+          },
+          {
+            "input": "68577",
+            "output": "Numero completo: 68577\nNumero: 6857\nDigito: 7\nDigito calculado: 8\nO numero fornecido esta incorreto!"
+          },
+          {
+            "input": "7510",
+            "output": "Numero completo: 7510\nNumero: 751\nDigito: 0\nDigito calculado: 0\nO numero fornecido esta correto!"
+          }
+        ]
+      },
+      {
+        "name": "ex7.12",
+        "testCases": [
+          {
+            "input": "7\n9\n10\n5\n2\n2",
+            "output": "7 e 9: 7 \u003c\u003d 9\n10 e 5: 5 \u003c\u003d 10\n2 e 2: 2 \u003c\u003d 2"
+          }
+        ]
+      },
+      {
+        "name": "ex7.13",
+        "testCases": [
+          {
+            "input": "9\n5\n1\n8\n7\n6\n3\n3\n3",
+            "output": "9, 5 e 1: 1 \u003c\u003d 5 \u003c\u003d 9\n8, 7 e 6: 6 \u003c\u003d 7 \u003c\u003d 8\n3, 3 e 3: 3 \u003c\u003d 3 \u003c\u003d 3"
+          }
+        ]
+      },
+      {
+        "name": "ex7.14",
+        "testCases": [
+          {
+            "input": "7\n9\n9\n7\n8\n2\n6\n4\n9\n9",
+            "output": "7 e 9: 7 \u003c\u003d 9\n9 e 7: 9 \u003e\u003d 7\n8 e 2: 2 \u003c\u003d 8\n6 e 4: 6 \u003e\u003d 4\n9 e 9: 9 \u003c\u003d 9"
+          }
+        ]
+      }
+    ]
+  }
+]

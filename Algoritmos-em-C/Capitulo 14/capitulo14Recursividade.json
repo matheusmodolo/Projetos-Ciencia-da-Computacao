@@ -1,0 +1,51 @@
+[
+  {
+    "description": "capitulo14Recursividade",
+    "programmingLanguage": "C",
+    "tests": [
+      {
+        "name": "ex14.1",
+        "testCases": [
+          {
+            "input": "2\n1",
+            "output": "ackermann( 2, 1 ) \u003d 5"
+          },
+          {
+            "input": "0\n1",
+            "output": "ackermann( 0, 1 ) \u003d 2"
+          },
+          {
+            "input": "2\n3",
+            "output": "ackermann( 2, 3 ) \u003d 9"
+          }
+        ]
+      },
+      {
+        "name": "ex14.2",
+        "testCases": [
+          {
+            "input": "5\n20",
+            "output": "mdc( 5, 20 ) \u003d 5"
+          },
+          {
+            "input": "15\n225",
+            "output": "mdc( 15, 225 ) \u003d 15"
+          },
+          {
+            "input": "149\n7",
+            "output": "mdc( 149, 7 ) \u003d 1"
+          }
+        ]
+      },
+      {
+        "name": "ex14.3",
+        "testCases": [
+          {
+            "input": "abracadabra",
+            "output": "Invertida: arbadacarba"
+          }
+        ]
+      }
+    ]
+  }
+]

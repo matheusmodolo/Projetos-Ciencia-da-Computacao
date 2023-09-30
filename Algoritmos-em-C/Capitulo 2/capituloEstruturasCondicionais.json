@@ -1,0 +1,310 @@
+[
+  {
+    "description": "capituloEstruturasCondicionais",
+    "programmingLanguage": "C",
+    "tests": [
+      {
+        "name": "ex2.1",
+        "testCases": [
+          {
+            "input": "19",
+            "output": "O numero 19 e impar."
+          },
+          {
+            "input": "8",
+            "output": "O numero 8 e par."
+          }
+        ]
+      },
+      {
+        "name": "ex2.2",
+        "testCases": [
+          {
+            "input": "7\n2",
+            "output": "Ordem crescente: 2 \u003c\u003d 7"
+          },
+          {
+            "input": "-2\n9",
+            "output": "Ordem crescente: -2 \u003c\u003d 9"
+          },
+          {
+            "input": "4\n4",
+            "output": "Ordem crescente: 4 \u003c\u003d 4"
+          }
+        ]
+      },
+      {
+        "name": "ex2.3",
+        "testCases": [
+          {
+            "input": "7\n2",
+            "output": "Ordem decrescente: 7 \u003e\u003d 2"
+          },
+          {
+            "input": "-30\n20",
+            "output": "Ordem decrescente: 20 \u003e\u003d -30"
+          },
+          {
+            "input": "4\n4",
+            "output": "Ordem decrescente: 4 \u003e\u003d 4"
+          }
+        ]
+      },
+      {
+        "name": "ex2.4",
+        "testCases": [
+          {
+            "input": "5\n1\n9",
+            "output": "1 \u003c\u003d 5 \u003c\u003d 9"
+          },
+          {
+            "input": "15\n8\n-4",
+            "output": "-4 \u003c\u003d 8 \u003c\u003d 15"
+          },
+          {
+            "input": "-4\n8\n-4",
+            "output": "-4 \u003c\u003d -4 \u003c\u003d 8"
+          }
+        ]
+      },
+      {
+        "name": "ex2.5",
+        "testCases": [
+          {
+            "input": "5\n1\n9",
+            "output": "9 \u003e\u003d 5 \u003e\u003d 1"
+          },
+          {
+            "input": "15\n8\n-4",
+            "output": "15 \u003e\u003d 8 \u003e\u003d -4"
+          },
+          {
+            "input": "-4\n8\n-4",
+            "output": "8 \u003e\u003d -4 \u003e\u003d -4"
+          }
+        ]
+      },
+      {
+        "name": "ex2.6",
+        "testCases": [
+          {
+            "input": "33.5",
+            "output": "A metade de 33.50 e 16.75"
+          },
+          {
+            "input": "9.5",
+            "output": "O triplo de 9.50 e 28.50"
+          }
+        ]
+      },
+      {
+        "name": "ex2.7",
+        "testCases": [
+          {
+            "input": "7\n8.5",
+            "output": "Os numeros fornecidos foram 7.00 e 8.50"
+          },
+          {
+            "input": "3\n2",
+            "output": "A subtracao entre 3.00 e 2.00 e igual a 1.00"
+          }
+        ]
+      },
+      {
+        "name": "ex2.8",
+        "testCases": [
+          {
+            "input": "4\n2\n9",
+            "output": "A soma dos dois numeros maiores fornecidos e 13.00"
+          },
+          {
+            "input": "-1\n7\n-2",
+            "output": "A soma dos dois numeros maiores fornecidos e 6.00"
+          },
+          {
+            "input": "7\n3\n7",
+            "output": "A soma dos dois numeros maiores fornecidos e 14.00"
+          }
+        ]
+      },
+      {
+        "name": "ex2.9",
+        "testCases": [
+          {
+            "input": "3\n7.5",
+            "output": "TRIANGULO de perimetro 22.50"
+          },
+          {
+            "input": "4\n5.5",
+            "output": "QUADRADO de area 30.25"
+          },
+          {
+            "input": "5\n2.5",
+            "output": "PENTAGONO"
+          },
+          {
+            "input": "7\n3.75",
+            "output": "Poligono nao identificado"
+          }
+        ]
+      },
+      {
+        "name": "ex2.10",
+        "testCases": [
+          {
+            "input": "5\n5\n5",
+            "output": "Triangulo EQUILATERO"
+          },
+          {
+            "input": "6.5\n9\n6.5",
+            "output": "Triangulo ISOSCELES"
+          },
+          {
+            "input": "6.5\n7\n3.5",
+            "output": "Triangulo ESCALENO"
+          },
+          {
+            "input": "15.8\n5.5\n3.5",
+            "output": "As medidas fornecidas dos lados nao representam um triangulo valido!"
+          }
+        ]
+      },
+      {
+        "name": "ex2.11",
+        "testCases": [
+          {
+            "input": "90\n60\n30",
+            "output": "Triangulo RETANGULO"
+          },
+          {
+            "input": "70\n70\n40",
+            "output": "Triangulo ACUTANGULO"
+          },
+          {
+            "input": "30\n120\n30",
+            "output": "Triangulo OBTUSANGULO"
+          },
+          {
+            "input": "90\n60\n60",
+            "output": "As medidas fornecidas dos angulos nao representam um triangulo valido!"
+          }
+        ]
+      },
+      {
+        "name": "ex2.12",
+        "testCases": [
+          {
+            "input": "20\n25\n40\n15",
+            "output": "Idade homem mais velho + idade mulher mais nova: 40\nIdade homem mais novo * idade mulher mais velha: 800"
+          }
+        ]
+      },
+      {
+        "name": "ex2.13",
+        "testCases": [
+          {
+            "input": "6.5\n7.5\n-1",
+            "output": "Media: 7.00\nAprovado!"
+          },
+          {
+            "input": "3\n4\n6",
+            "output": "Media: 5.00\nExame."
+          },
+          {
+            "input": "5\n1\n2",
+            "output": "Media: 3.50\nReprovado..."
+          }
+        ]
+      },
+      {
+        "name": "ex2.14",
+        "testCases": [
+          {
+            "input": "82\n1.8",
+            "output": "IMC: 25.31\nAtencao, voce esta acima de seu peso (sobrepeso)!"
+          },
+          {
+            "input": "50\n1.7",
+            "output": "IMC: 17.30\nVoce esta abaixo do peso ideal!"
+          },
+          {
+            "input": "120\n1.82",
+            "output": "IMC: 36.23\nCuidado! Obesidade grau II!"
+          }
+        ]
+      },
+      {
+        "name": "ex2.15",
+        "testCases": [
+          {
+            "input": "18",
+            "output": "Eleitor obrigatorio."
+          },
+          {
+            "input": "29",
+            "output": "Eleitor obrigatorio."
+          },
+          {
+            "input": "15",
+            "output": "Nao eleitor."
+          },
+          {
+            "input": "17",
+            "output": "Eleitor facultativo."
+          },
+          {
+            "input": "70",
+            "output": "Eleitor facultativo."
+          }
+        ]
+      },
+      {
+        "name": "ex2.16",
+        "testCases": [
+          {
+            "input": "6",
+            "output": "O valor fornecido foi 6."
+          },
+          {
+            "input": "7",
+            "output": "Valor invalido."
+          }
+        ]
+      },
+      {
+        "name": "ex2.17",
+        "testCases": [
+          {
+            "input": "28\n8\n+",
+            "output": "28.00 + 8.00 \u003d 36.00"
+          },
+          {
+            "input": "16\n3\n/",
+            "output": "16.00 / 3.00 \u003d 5.33"
+          },
+          {
+            "input": "13\n76\nx",
+            "output": "Opcao invalida!"
+          }
+        ]
+      },
+      {
+        "name": "ex2.18",
+        "testCases": [
+          {
+            "input": "C\n38.5",
+            "output": "38.50 graus Celsius correspondem a 101.30 graus Fahrenheit"
+          },
+          {
+            "input": "F\n125.7",
+            "output": "125.70 graus Fahrenheit correspondem a 52.06 graus Celsius"
+          },
+          {
+            "input": "x",
+            "output": "Opcao invalida!"
+          }
+        ]
+      }
+    ]
+  }
+]
